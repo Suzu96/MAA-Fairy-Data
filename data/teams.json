@@ -1,7 +1,7 @@
 {
-  "schema": 3,
-  "generated_at": "2026-09-22T10:13:51Z",
-  "team_count": 30,
+  "schema": 4,
+  "generated_at": "2026-09-22T10:16:40Z",
+  "team_count": 33,
   "teams": [
     {
       "id": "team_7587bc6d5b3f",
@@ -10,7 +10,7 @@
         "南宫羽",
         "浮波柚叶"
       ],
-      "core": null,
+      "core": "星见雅",
       "archetype": null,
       "priority": 0,
       "sources": [
@@ -18,13 +18,41 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "星見雅編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         },
         {
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "section": "Hoshimi Miyabi's Best Teams",
-          "page_fetched_at": "2026-09-22T10:13:51Z"
+          "page_fetched_at": "2026-09-22T10:16:40Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 2
+    },
+    {
+      "id": "team_7df42ee5740d",
+      "members": [
+        "耀嘉音",
+        "星见雅",
+        "月城柳"
+      ],
+      "core": "星见雅",
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "月城柳のパーティ編成",
+          "page_fetched_at": "2026-09-22T10:16:38Z"
+        },
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "page_fetched_at": "2026-09-22T10:16:40Z"
         }
       ],
       "tags": [],
@@ -46,7 +74,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "鋭御の最強パーティはクラレッタ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -68,7 +96,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "狛野真斗のパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -90,7 +118,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "A級のみ限定キャラなしパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -112,7 +140,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "オルペウスのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -134,7 +162,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "ヒューゴのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -156,7 +184,29 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "イヴリンのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_46e86cfd3527",
+      "members": [
+        "星见雅",
+        "冯·莱卡恩",
+        "苍角"
+      ],
+      "core": "星见雅",
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "page_fetched_at": "2026-09-22T10:16:40Z"
         }
       ],
       "tags": [],
@@ -178,7 +228,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "盤岳のパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -200,7 +250,29 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "次点の最強パーティは「イーシェン」編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_5e114a74a1c6",
+      "members": [
+        "星见雅",
+        "浮波柚叶",
+        "柏妮思·怀特"
+      ],
+      "core": "星见雅",
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "page_fetched_at": "2026-09-22T10:16:40Z"
         }
       ],
       "tags": [],
@@ -222,7 +294,29 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "アリスのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_6705ea212529",
+      "members": [
+        "星见雅",
+        "浮波柚叶",
+        "薇薇安·班希"
+      ],
+      "core": "星见雅",
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "page_fetched_at": "2026-09-22T10:16:40Z"
         }
       ],
       "tags": [],
@@ -244,7 +338,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "イドリーのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -266,7 +360,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "その他の異常のおすすめパーティはアリア編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -288,7 +382,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "0号アンビーのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -310,7 +404,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "エレンのパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -332,29 +426,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "異常の最強パーティはレミエール編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_7df42ee5740d",
-      "members": [
-        "耀嘉音",
-        "星见雅",
-        "月城柳"
-      ],
-      "core": null,
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "月城柳のパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -376,7 +448,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "シードのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -398,7 +470,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "パイパーのパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -420,7 +492,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "ジェーンのパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -442,7 +514,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "ビビアンのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -464,7 +536,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "アンドーのパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -486,7 +558,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "ゼンゼロの最強パーティは「瞬光」編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -508,7 +580,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "朱鳶（しゅえん）のパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -530,7 +602,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "ビリーのパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -552,7 +624,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "悠真（はるまさ）のパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -574,7 +646,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "猫又のパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -596,7 +668,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "プロメイアのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -618,7 +690,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "カリンのパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -640,7 +712,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "スターライトビリーのパーティ編成",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
@@ -662,7 +734,7 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "11号のパーティ",
-          "page_fetched_at": "2026-09-22T10:13:50Z"
+          "page_fetched_at": "2026-09-22T10:16:38Z"
         }
       ],
       "tags": [],
