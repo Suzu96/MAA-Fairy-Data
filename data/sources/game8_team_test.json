@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "source": "game8",
+  "url": "https://game8.jp/zenless/614253",
+  "http_status": 200,
+  "fetched_at": "2026-09-22T09:09:33Z",
+  "section": "星見雅編成",
+  "raw_members": [
+    "星見雅",
+    "南宮羽",
+    "柚葉"
+  ],
+  "normalized_members": [
+    "星见雅",
+    "南宫羽",
+    "浮波柚叶"
+  ],
+  "valid_three_member_team": true
+}
