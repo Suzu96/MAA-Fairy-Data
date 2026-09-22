@@ -1,0 +1,478 @@
+{
+  "schema": 1,
+  "source": "game8",
+  "url": "https://game8.jp/zenless/614253",
+  "http_status": 200,
+  "fetched_at": "2026-09-22T09:13:12Z",
+  "team_count": 30,
+  "teams": [
+    {
+      "section": "ゼンゼロの最強パーティは「瞬光」編成",
+      "raw_members": [
+        "瞬光",
+        "千夏",
+        "ダイアリン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "次点の最強パーティは「イーシェン」編成",
+      "raw_members": [
+        "リュシア",
+        "イーシェン",
+        "ダイアリン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "鋭御の最強パーティはクラレッタ",
+      "raw_members": [
+        "クラレッタ",
+        "ノルムー",
+        "リナ"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "異常の最強パーティはレミエール編成",
+      "raw_members": [
+        "アリア",
+        "ヴェリナ",
+        "レミエール"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "その他の異常のおすすめパーティはアリア編成",
+      "raw_members": [
+        "アリア",
+        "千夏",
+        "南宮羽"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        "南宫羽"
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "プロメイアのパーティ編成",
+      "raw_members": [
+        "プロメイア",
+        "南宮羽",
+        "柚葉"
+      ],
+      "normalized_members": [
+        null,
+        "南宫羽",
+        "浮波柚叶"
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "星見雅編成",
+      "raw_members": [
+        "星見雅",
+        "南宮羽",
+        "柚葉"
+      ],
+      "normalized_members": [
+        "星见雅",
+        "南宫羽",
+        "浮波柚叶"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "section": "盤岳のパーティ編成",
+      "raw_members": [
+        "リュシア",
+        "盤岳",
+        "ダイアリン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "イドリーのパーティ編成",
+      "raw_members": [
+        "リュシア",
+        "イドリー",
+        "ダイアリン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "スターライトビリーのパーティ編成",
+      "raw_members": [
+        "リュシア",
+        "スターライトビリー",
+        "ダイアリン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "シードのパーティ編成",
+      "raw_members": [
+        "シード",
+        "トリガー",
+        "シーシィア"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "オルペウスのパーティ編成",
+      "raw_members": [
+        "アストラ",
+        "オルペウス",
+        "ライト"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "アリスのパーティ編成",
+      "raw_members": [
+        "アリス",
+        "ビビアン",
+        "柚葉"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        "浮波柚叶"
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "ヒューゴのパーティ編成",
+      "raw_members": [
+        "ライカン",
+        "ライト",
+        "ヒューゴ"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "ビビアンのパーティ編成",
+      "raw_members": [
+        "アストラ",
+        "ビビアン",
+        "柳"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "0号アンビーのパーティ編成",
+      "raw_members": [
+        "アストラ",
+        "0号アンビー",
+        "トリガー"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "イヴリンのパーティ編成",
+      "raw_members": [
+        "アストラ",
+        "イヴリン",
+        "ライト"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "悠真（はるまさ）のパーティ編成",
+      "raw_members": [
+        "悠真",
+        "青衣",
+        "リナ"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "月城柳のパーティ編成",
+      "raw_members": [
+        "アストラ",
+        "星見雅",
+        "柳"
+      ],
+      "normalized_members": [
+        null,
+        "星见雅",
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "ジェーンのパーティ",
+      "raw_members": [
+        "バーニス",
+        "シーザー",
+        "ジェーン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "朱鳶（しゅえん）のパーティ",
+      "raw_members": [
+        "青衣",
+        "ニコ",
+        "朱鳶"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "エレンのパーティ",
+      "raw_members": [
+        "ライト",
+        "シーザー",
+        "エレン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "11号のパーティ",
+      "raw_members": [
+        "ライト",
+        "バーニス",
+        "11号"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "猫又のパーティ",
+      "raw_members": [
+        "シーザー",
+        "ルーシー",
+        "猫又"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "パイパーのパーティ",
+      "raw_members": [
+        "バーニス",
+        "パイパー",
+        "シーザー"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "アンドーのパーティ",
+      "raw_members": [
+        "青衣",
+        "シーザー",
+        "アンドー"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "カリンのパーティ",
+      "raw_members": [
+        "青衣",
+        "シーザー",
+        "カリン"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "ビリーのパーティ",
+      "raw_members": [
+        "ビリー",
+        "シーザー",
+        "ニコ"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "狛野真斗のパーティ",
+      "raw_members": [
+        "狛野真斗",
+        "パン",
+        "ルーシー"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    },
+    {
+      "section": "A級のみ限定キャラなしパーティ",
+      "raw_members": [
+        "パイパー",
+        "セス",
+        "ルーシー"
+      ],
+      "normalized_members": [
+        null,
+        null,
+        null
+      ],
+      "fully_normalized": false
+    }
+  ],
+  "unmapped_names": [
+    "0号アンビー",
+    "11号",
+    "アストラ",
+    "アリア",
+    "アリス",
+    "アンドー",
+    "イドリー",
+    "イヴリン",
+    "イーシェン",
+    "エレン",
+    "オルペウス",
+    "カリン",
+    "クラレッタ",
+    "シーザー",
+    "シーシィア",
+    "シード",
+    "ジェーン",
+    "スターライトビリー",
+    "セス",
+    "ダイアリン",
+    "トリガー",
+    "ニコ",
+    "ノルムー",
+    "バーニス",
+    "パイパー",
+    "パン",
+    "ヒューゴ",
+    "ビビアン",
+    "ビリー",
+    "プロメイア",
+    "ライカン",
+    "ライト",
+    "リナ",
+    "リュシア",
+    "ルーシー",
+    "レミエール",
+    "ヴェリナ",
+    "千夏",
+    "悠真",
+    "朱鳶",
+    "柳",
+    "狛野真斗",
+    "猫又",
+    "盤岳",
+    "瞬光",
+    "青衣"
+  ]
+}
