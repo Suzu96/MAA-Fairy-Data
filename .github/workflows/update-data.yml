@@ -19,8 +19,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run data updater
+      - name: Run basic data updater
         run: python scripts/update_data.py
+
+      - name: Test Game8 access
+        run: python scripts/fetch_game8_test.py
 
       - name: Commit generated data
         run: |
@@ -28,10 +31,11 @@ jobs:
           git config user.email "maa-fairy-bot@users.noreply.github.com"
 
           git add data/automation_test.json
+          git add data/sources/game8_smoke.json
 
           if git diff --cached --quiet; then
             echo "No data changes."
           else
-            git commit -m "Auto update test data"
+            git commit -m "Auto update data"
             git push
           fi
