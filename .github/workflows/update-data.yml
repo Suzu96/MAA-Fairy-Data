@@ -52,6 +52,9 @@ jobs:
       - name: Extract all Icy Veins character teams
         run: python scripts/extract_icyveins_all_character_teams.py
 
+      - name: Summarize Icy Veins warnings
+        run: python scripts/summarize_icyveins_warnings.py
+
       - name: Build normalized team database
         run: python scripts/build_teams.py
 
@@ -77,6 +80,7 @@ jobs:
           git add data/sources/icyveins_team_pages.json
           git add data/sources/icyveins_team_page_status.json
           git add data/sources/icyveins_all_character_teams.json
+          git add data/sources/icyveins_warning_summary.json
           git add data/teams.json
           git add data/synergy.json
 
