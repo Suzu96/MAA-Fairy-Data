@@ -1,0 +1,37 @@
+name: Update Data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Run data updater
+        run: python scripts/update_data.py
+
+      - name: Commit generated data
+        run: |
+          git config user.name "MAA-Fairy Bot"
+          git config user.email "maa-fairy-bot@users.noreply.github.com"
+
+          git add data/automation_test.json
+
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Auto update test data"
+            git push
+          fi
