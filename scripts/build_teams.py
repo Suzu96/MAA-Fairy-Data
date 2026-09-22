@@ -4,12 +4,23 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-SOURCE_FILE = Path("data/sources/game8_all_teams.json")
-OUTPUT_FILE = Path("data/teams.json")
+GAME8_FILE = Path(
+    "data/sources/game8_all_teams.json"
+)
+
+ICYVEINS_FILE = Path(
+    "data/sources/icyveins_team_test.json"
+)
+
+OUTPUT_FILE = Path(
+    "data/teams.json"
+)
 
 
 def make_team_id(members):
-    key = "|".join(sorted(members))
+    key = "|".join(
+        sorted(members)
+    )
 
     digest = hashlib.sha1(
         key.encode("utf-8")
@@ -18,9 +29,64 @@ def make_team_id(members):
     return f"team_{digest}"
 
 
-def main():
+def team_key(members):
+    return tuple(
+        sorted(members)
+    )
+
+
+def add_source(
+    database,
+    members,
+    source
+):
+    key = team_key(members)
+
+    if key not in database:
+        database[key] = {
+            "id": make_team_id(
+                members
+            ),
+            "members": members,
+            "core": None,
+            "archetype": None,
+            "priority": 0,
+            "sources": [],
+            "tags": [],
+            "notes": ""
+        }
+
+    existing_sources = (
+        database[key]["sources"]
+    )
+
+    source_identity = (
+        source.get("site"),
+        source.get("url"),
+        source.get("section")
+    )
+
+    for existing in existing_sources:
+        existing_identity = (
+            existing.get("site"),
+            existing.get("url"),
+            existing.get("section")
+        )
+
+        if (
+            existing_identity
+            == source_identity
+        ):
+            return
+
+    existing_sources.append(
+        source
+    )
+
+
+def load_game8(database):
     source = json.loads(
-        SOURCE_FILE.read_text(
+        GAME8_FILE.read_text(
             encoding="utf-8"
         )
     )
@@ -32,21 +98,15 @@ def main():
 
     if unmapped:
         raise RuntimeError(
-            "Unmapped character names remain: "
+            "Game8 still has unmapped "
+            "character names: "
             + ", ".join(unmapped)
         )
 
-    source_teams = source.get(
+    for item in source.get(
         "teams",
         []
-    )
-
-    output_teams = []
-
-    seen = set()
-
-    for item in source_teams:
-
+    ):
         members = item.get(
             "normalized_members",
             []
@@ -61,49 +121,94 @@ def main():
         ):
             continue
 
-        dedupe_key = tuple(
-            sorted(members)
+        add_source(
+            database,
+            members,
+            {
+                "site": "Game8",
+                "url": source["url"],
+                "section":
+                    item["section"],
+                "page_fetched_at":
+                    source["fetched_at"]
+            }
         )
 
-        if dedupe_key in seen:
-            continue
 
-        seen.add(dedupe_key)
+def load_icyveins(database):
+    source = json.loads(
+        ICYVEINS_FILE.read_text(
+            encoding="utf-8"
+        )
+    )
 
-        team = {
-            "id": make_team_id(
-                members
-            ),
+    members = source.get(
+        "normalized_members",
+        []
+    )
 
-            "members": members,
+    valid = source.get(
+        "valid_three_member_team",
+        False
+    )
 
-            "core": None,
+    if not valid:
+        return
 
-            "archetype": None,
+    if len(members) != 3:
+        return
 
-            "priority": 0,
+    if any(
+        member is None
+        for member in members
+    ):
+        return
 
-            "source_count": 1,
-
-            "sources": [
-                {
-                    "site": "Game8",
-                    "url": source["url"],
-                    "section": item["section"],
-                    "page_fetched_at":
-                        source["fetched_at"]
-                }
-            ],
-
-            "tags": [],
-
-            "notes": ""
+    add_source(
+        database,
+        members,
+        {
+            "site": "Icy Veins",
+            "url": source["url"],
+            "section":
+                source["section"],
+            "page_fetched_at":
+                source["fetched_at"]
         }
+    )
 
-        output_teams.append(team)
+
+def main():
+    database = {}
+
+    load_game8(
+        database
+    )
+
+    load_icyveins(
+        database
+    )
+
+    teams = []
+
+    for team in database.values():
+        team["source_count"] = len(
+            team["sources"]
+        )
+
+        teams.append(
+            team
+        )
+
+    teams.sort(
+        key=lambda item: (
+            -item["source_count"],
+            item["id"]
+        )
+    )
 
     data = {
-        "schema": 2,
+        "schema": 3,
 
         "generated_at": datetime.now(
             timezone.utc
@@ -113,10 +218,10 @@ def main():
         .replace("+00:00", "Z"),
 
         "team_count":
-            len(output_teams),
+            len(teams),
 
         "teams":
-            output_teams
+            teams
     }
 
     OUTPUT_FILE.write_text(
@@ -129,9 +234,30 @@ def main():
     )
 
     print(
-        f"Generated {len(output_teams)} "
-        f"normalized teams."
+        f"Generated "
+        f"{len(teams)} merged teams."
     )
+
+    multi_source = [
+        team
+        for team in teams
+        if team["source_count"] > 1
+    ]
+
+    print(
+        f"Multi-source teams: "
+        f"{len(multi_source)}"
+    )
+
+    for team in multi_source:
+        print(
+            " + ".join(
+                team["members"]
+            ),
+            "=>",
+            team["source_count"],
+            "sources"
+        )
 
 
 if __name__ == "__main__":
