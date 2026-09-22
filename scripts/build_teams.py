@@ -49,7 +49,7 @@ def ensure_team(
                 members
             ),
             "members": members,
-            "core": None,
+            "recommended_for": [],
             "archetype": None,
             "priority": 0,
             "sources": [],
@@ -60,32 +60,23 @@ def ensure_team(
     return database[key]
 
 
-def set_core(
+def add_recommended_for(
     team,
-    core
+    character
 ):
-    if not core:
+    if not character:
         return
 
-    current = team.get(
-        "core"
-    )
-
-    if current is None:
-        team["core"] = core
+    if character not in team["members"]:
         return
 
-    if current == core:
-        return
-
-    conflicts = team.setdefault(
-        "core_conflicts",
-        []
-    )
-
-    if core not in conflicts:
-        conflicts.append(
-            core
+    if character not in team[
+        "recommended_for"
+    ]:
+        team[
+            "recommended_for"
+        ].append(
+            character
         )
 
 
@@ -96,7 +87,8 @@ def add_source(
     source_identity = (
         source.get("site"),
         source.get("url"),
-        source.get("section")
+        source.get("section"),
+        source.get("recommended_for")
     )
 
     for existing in team["sources"]:
@@ -104,7 +96,10 @@ def add_source(
         existing_identity = (
             existing.get("site"),
             existing.get("url"),
-            existing.get("section")
+            existing.get("section"),
+            existing.get(
+                "recommended_for"
+            )
         )
 
         if (
@@ -162,9 +157,13 @@ def load_game8(
             members
         )
 
-        set_core(
+        core = item.get(
+            "core"
+        )
+
+        add_recommended_for(
             team,
-            item.get("core")
+            core
         )
 
         add_source(
@@ -174,6 +173,8 @@ def load_game8(
                 "url": source["url"],
                 "section":
                     item["section"],
+                "recommended_for":
+                    core,
                 "page_fetched_at":
                     source["fetched_at"]
             }
@@ -230,7 +231,7 @@ def load_icyveins(
             page_core
             and page_core in members
         ):
-            set_core(
+            add_recommended_for(
                 team,
                 page_core
             )
@@ -242,6 +243,8 @@ def load_icyveins(
                 "url": source["url"],
                 "section":
                     "Hoshimi Miyabi's Best Teams",
+                "recommended_for":
+                    page_core,
                 "page_fetched_at":
                     source["fetched_at"]
             }
@@ -274,29 +277,31 @@ def main():
     teams.sort(
         key=lambda item: (
             -item["source_count"],
-            item["core"] or "",
+            -len(
+                item["recommended_for"]
+            ),
             item["id"]
         )
     )
 
-    core_detected_count = sum(
+    recommended_detected = sum(
         1
         for team in teams
-        if team.get("core")
+        if team["recommended_for"]
     )
 
-    core_missing_count = sum(
+    recommended_missing = sum(
         1
         for team in teams
-        if not team.get("core")
+        if not team["recommended_for"]
     )
 
-    core_conflict_count = sum(
+    multi_anchor_count = sum(
         1
         for team in teams
-        if team.get(
-            "core_conflicts"
-        )
+        if len(
+            team["recommended_for"]
+        ) > 1
     )
 
     multi_source_count = sum(
@@ -306,7 +311,7 @@ def main():
     )
 
     data = {
-        "schema": 5,
+        "schema": 6,
 
         "generated_at": datetime.now(
             timezone.utc
@@ -318,14 +323,14 @@ def main():
         "team_count":
             len(teams),
 
-        "core_detected_count":
-            core_detected_count,
+        "recommended_for_detected_count":
+            recommended_detected,
 
-        "core_missing_count":
-            core_missing_count,
+        "recommended_for_missing_count":
+            recommended_missing,
 
-        "core_conflict_count":
-            core_conflict_count,
+        "multi_anchor_team_count":
+            multi_anchor_count,
 
         "multi_source_count":
             multi_source_count,
@@ -348,18 +353,18 @@ def main():
     )
 
     print(
-        f"Core detected: "
-        f"{core_detected_count}"
+        f"Recommended-for detected: "
+        f"{recommended_detected}"
     )
 
     print(
-        f"Core missing: "
-        f"{core_missing_count}"
+        f"Recommended-for missing: "
+        f"{recommended_missing}"
     )
 
     print(
-        f"Core conflicts: "
-        f"{core_conflict_count}"
+        f"Multi-anchor teams: "
+        f"{multi_anchor_count}"
     )
 
     print(
