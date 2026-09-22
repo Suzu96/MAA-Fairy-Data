@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "source": "icyveins",
+  "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+  "http_status": 200,
+  "fetched_at": "2026-09-22T09:36:59Z",
+  "section": "Hoshimi Miyabi's Best Teams",
+  "raw_members": [
+    "Hoshimi Miyabi",
+    "Ukinami Yuzuha",
+    "Nangong Yu"
+  ],
+  "normalized_members": [
+    "星见雅",
+    "浮波柚叶",
+    "南宫羽"
+  ],
+  "valid_three_member_team": true
+}
