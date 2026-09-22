@@ -3,7 +3,7 @@
   "source": "game8",
   "url": "https://game8.jp/zenless/614253",
   "http_status": 200,
-  "fetched_at": "2026-09-22T09:13:12Z",
+  "fetched_at": "2026-09-22T09:20:24Z",
   "team_count": 30,
   "teams": [
     {
@@ -14,11 +14,11 @@
         "ダイアリン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "叶瞬光",
+        "千夏",
+        "琉音"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "次点の最強パーティは「イーシェン」編成",
@@ -28,11 +28,11 @@
         "ダイアリン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "卢西娅·艾洛温",
+        "仪玄",
+        "琉音"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "鋭御の最強パーティはクラレッタ",
@@ -42,11 +42,11 @@
         "リナ"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "克拉蕾·弗林特",
+        "诺姆·霍洛维尔",
+        "亚历山德丽娜·莎芭丝缇安"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "異常の最強パーティはレミエール編成",
@@ -56,11 +56,11 @@
         "レミエール"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "爱芮",
+        "维琳娜·艾嘉德",
+        "蕾米埃尔·丹"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "その他の異常のおすすめパーティはアリア編成",
@@ -70,11 +70,11 @@
         "南宮羽"
       ],
       "normalized_members": [
-        null,
-        null,
+        "爱芮",
+        "千夏",
         "南宫羽"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "プロメイアのパーティ編成",
@@ -84,11 +84,11 @@
         "柚葉"
       ],
       "normalized_members": [
-        null,
+        "普罗米娅",
         "南宫羽",
         "浮波柚叶"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "星見雅編成",
@@ -112,11 +112,11 @@
         "ダイアリン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "卢西娅·艾洛温",
+        "般岳",
+        "琉音"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "イドリーのパーティ編成",
@@ -126,11 +126,11 @@
         "ダイアリン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "卢西娅·艾洛温",
+        "伊德海莉·墨菲",
+        "琉音"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "スターライトビリーのパーティ編成",
@@ -140,11 +140,11 @@
         "ダイアリン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "卢西娅·艾洛温",
+        "星徽·比利·奇德",
+        "琉音"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "シードのパーティ編成",
@@ -154,11 +154,11 @@
         "シーシィア"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "「席德」",
+        "「扳机」",
+        "希希芙"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "オルペウスのパーティ編成",
@@ -168,11 +168,11 @@
         "ライト"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "耀嘉音",
+        "奥菲丝·马格努森&「鬼火」",
+        "莱特"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "アリスのパーティ編成",
@@ -182,11 +182,11 @@
         "柚葉"
       ],
       "normalized_members": [
-        null,
-        null,
+        "爱丽丝·泰姆菲尔德",
+        "薇薇安·班希",
         "浮波柚叶"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "ヒューゴのパーティ編成",
@@ -196,11 +196,11 @@
         "ヒューゴ"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "冯·莱卡恩",
+        "莱特",
+        "雨果·维拉德"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "ビビアンのパーティ編成",
@@ -210,11 +210,11 @@
         "柳"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "耀嘉音",
+        "薇薇安·班希",
+        "月城柳"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "0号アンビーのパーティ編成",
@@ -224,11 +224,11 @@
         "トリガー"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "耀嘉音",
+        "零号·安比",
+        "「扳机」"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "イヴリンのパーティ編成",
@@ -238,11 +238,11 @@
         "ライト"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "耀嘉音",
+        "伊芙琳·舒瓦利耶",
+        "莱特"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "悠真（はるまさ）のパーティ編成",
@@ -252,11 +252,11 @@
         "リナ"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "浅羽悠真",
+        "青衣",
+        "亚历山德丽娜·莎芭丝缇安"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "月城柳のパーティ編成",
@@ -266,11 +266,11 @@
         "柳"
       ],
       "normalized_members": [
-        null,
+        "耀嘉音",
         "星见雅",
-        null
+        "月城柳"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "ジェーンのパーティ",
@@ -280,11 +280,11 @@
         "ジェーン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "柏妮思·怀特",
+        "凯撒·金",
+        "简·杜"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "朱鳶（しゅえん）のパーティ",
@@ -294,11 +294,11 @@
         "朱鳶"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "青衣",
+        "妮可·德玛拉",
+        "朱鸢"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "エレンのパーティ",
@@ -308,11 +308,11 @@
         "エレン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "莱特",
+        "凯撒·金",
+        "艾莲·乔"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "11号のパーティ",
@@ -322,11 +322,11 @@
         "11号"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "莱特",
+        "柏妮思·怀特",
+        "「11号」"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "猫又のパーティ",
@@ -336,11 +336,11 @@
         "猫又"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "凯撒·金",
+        "露西亚娜·德·蒙特夫",
+        "猫宫又奈"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "パイパーのパーティ",
@@ -350,11 +350,11 @@
         "シーザー"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "柏妮思·怀特",
+        "派派·韦尔",
+        "凯撒·金"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "アンドーのパーティ",
@@ -364,11 +364,11 @@
         "アンドー"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "青衣",
+        "凯撒·金",
+        "安东·伊万诺夫"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "カリンのパーティ",
@@ -378,11 +378,11 @@
         "カリン"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "青衣",
+        "凯撒·金",
+        "可琳·威克斯"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "ビリーのパーティ",
@@ -392,11 +392,11 @@
         "ニコ"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "比利·奇德",
+        "凯撒·金",
+        "妮可·德玛拉"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "狛野真斗のパーティ",
@@ -406,11 +406,11 @@
         "ルーシー"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "狛野真斗",
+        "潘引壶",
+        "露西亚娜·德·蒙特夫"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     },
     {
       "section": "A級のみ限定キャラなしパーティ",
@@ -420,59 +420,12 @@
         "ルーシー"
       ],
       "normalized_members": [
-        null,
-        null,
-        null
+        "派派·韦尔",
+        "赛斯·洛威尔",
+        "露西亚娜·德·蒙特夫"
       ],
-      "fully_normalized": false
+      "fully_normalized": true
     }
   ],
-  "unmapped_names": [
-    "0号アンビー",
-    "11号",
-    "アストラ",
-    "アリア",
-    "アリス",
-    "アンドー",
-    "イドリー",
-    "イヴリン",
-    "イーシェン",
-    "エレン",
-    "オルペウス",
-    "カリン",
-    "クラレッタ",
-    "シーザー",
-    "シーシィア",
-    "シード",
-    "ジェーン",
-    "スターライトビリー",
-    "セス",
-    "ダイアリン",
-    "トリガー",
-    "ニコ",
-    "ノルムー",
-    "バーニス",
-    "パイパー",
-    "パン",
-    "ヒューゴ",
-    "ビビアン",
-    "ビリー",
-    "プロメイア",
-    "ライカン",
-    "ライト",
-    "リナ",
-    "リュシア",
-    "ルーシー",
-    "レミエール",
-    "ヴェリナ",
-    "千夏",
-    "悠真",
-    "朱鳶",
-    "柳",
-    "狛野真斗",
-    "猫又",
-    "盤岳",
-    "瞬光",
-    "青衣"
-  ]
+  "unmapped_names": []
 }
