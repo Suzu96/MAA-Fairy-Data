@@ -25,6 +25,9 @@ jobs:
       - name: Test Game8 access
         run: python scripts/fetch_game8_test.py
 
+      - name: Test Game8 team extraction
+        run: python scripts/extract_game8_team_test.py
+
       - name: Commit generated data
         run: |
           git config user.name "MAA-Fairy Bot"
@@ -32,6 +35,7 @@ jobs:
 
           git add data/automation_test.json
           git add data/sources/game8_smoke.json
+          git add data/sources/game8_team_test.json
 
           if git diff --cached --quiet; then
             echo "No data changes."
