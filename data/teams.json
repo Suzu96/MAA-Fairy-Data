@@ -1,5 +1,19 @@
 {
   "schema": 1,
   "generated_at": null,
-  "teams": []
+  "teams": [
+    {
+      "id": "miyabi_nangong_yu_yuzuha_001",
+      "core": "星见雅",
+      "members": [
+        "星见雅",
+        "南宫羽",
+        "浮波柚叶"
+      ],
+      "archetype": "异常/失衡协同",
+      "priority": 100,
+      "source_ids": [],
+      "notes": ""
+    }
+  ]
 }
