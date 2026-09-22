@@ -27,36 +27,43 @@ class LinkParser(HTMLParser):
         self.current = None
 
     def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+
         if tag == "a":
-            attrs = dict(attrs)
             href = attrs.get("href")
 
             if href:
                 self.current = {
                     "href": href,
-                    "text": []
+                    "text": [],
+                    "alts": []
                 }
 
         elif (
             tag == "img"
             and self.current is not None
         ):
-            attrs = dict(attrs)
             alt = attrs.get("alt")
 
             if alt:
-                self.current["text"].append(
-                    alt
+                self.current[
+                    "alts"
+                ].append(
+                    alt.strip()
                 )
 
     def handle_data(self, data):
-        if self.current is not None:
-            value = data.strip()
+        if self.current is None:
+            return
 
-            if value:
-                self.current["text"].append(
-                    value
-                )
+        value = data.strip()
+
+        if value:
+            self.current[
+                "text"
+            ].append(
+                value
+            )
 
     def handle_endtag(self, tag):
         if (
@@ -66,13 +73,35 @@ class LinkParser(HTMLParser):
             self.links.append(
                 self.current
             )
+
             self.current = None
 
 
-def clean_name(parts):
+def clean_value(value):
     return " ".join(
-        " ".join(parts).split()
+        value.split()
+    ).strip()
+
+
+def choose_name(link):
+    visible = clean_value(
+        " ".join(
+            link["text"]
+        )
     )
+
+    if visible:
+        return visible
+
+    for alt in link["alts"]:
+        alt = clean_value(
+            alt
+        )
+
+        if alt:
+            return alt
+
+    return ""
 
 
 def main():
@@ -152,14 +181,18 @@ def main():
         if slug in seen:
             continue
 
-        seen.add(slug)
+        seen.add(
+            slug
+        )
 
-        raw_name = clean_name(
-            link["text"]
+        raw_name = choose_name(
+            link
         )
 
         normalized_name = (
-            aliases.get(raw_name)
+            aliases.get(
+                raw_name
+            )
             if raw_name
             else None
         )
@@ -190,7 +223,7 @@ def main():
 
     pages.sort(
         key=lambda item:
-            item["slug"]
+            item["raw_name"].lower()
     )
 
     unmapped = sorted(
@@ -206,8 +239,16 @@ def main():
         }
     )
 
+    mapped_count = sum(
+        1
+        for item in pages
+        if item[
+            "normalized_name"
+        ]
+    )
+
     data = {
-        "schema": 3,
+        "schema": 4,
 
         "source":
             "icyveins",
@@ -230,6 +271,9 @@ def main():
 
         "page_count":
             len(pages),
+
+        "mapped_name_count":
+            mapped_count,
 
         "unmapped_name_count":
             len(unmapped),
