@@ -1,8 +1,8 @@
 import json
-import re
-import html
 from datetime import datetime, timezone
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 
@@ -20,22 +20,59 @@ OUTPUT = Path(
 )
 
 
-def clean_text(value):
-    value = re.sub(
-        r"<[^>]+>",
-        " ",
-        value
+class LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+        self.current = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            attrs = dict(attrs)
+            href = attrs.get("href")
+
+            if href:
+                self.current = {
+                    "href": href,
+                    "text": []
+                }
+
+        elif (
+            tag == "img"
+            and self.current is not None
+        ):
+            attrs = dict(attrs)
+            alt = attrs.get("alt")
+
+            if alt:
+                self.current["text"].append(
+                    alt
+                )
+
+    def handle_data(self, data):
+        if self.current is not None:
+            value = data.strip()
+
+            if value:
+                self.current["text"].append(
+                    value
+                )
+
+    def handle_endtag(self, tag):
+        if (
+            tag == "a"
+            and self.current is not None
+        ):
+            self.links.append(
+                self.current
+            )
+            self.current = None
+
+
+def clean_name(parts):
+    return " ".join(
+        " ".join(parts).split()
     )
-
-    value = html.unescape(value)
-
-    value = re.sub(
-        r"\s+",
-        " ",
-        value
-    )
-
-    return value.strip()
 
 
 def main():
@@ -71,41 +108,60 @@ def main():
             errors="replace"
         )
 
-    pattern = re.compile(
-        r'<a\b[^>]*href=["\']'
-        r'(?:https://www\.icy-veins\.com)?'
-        r'(/zenless-zone-zero/'
-        r'([a-z0-9-]+)'
-        r'-profile-skills-mindscapes)'
-        r'(?:[?#][^"\']*)?'
-        r'["\'][^>]*>'
-        r'(.*?)'
-        r'</a>',
-        flags=re.I | re.S
-    )
+    parser = LinkParser()
+    parser.feed(raw)
 
     pages = []
     seen = set()
 
-    for match in pattern.finditer(raw):
+    for link in parser.links:
 
-        profile_path = match.group(1)
-        slug = match.group(2)
+        href = link["href"]
 
-        raw_name = clean_text(
-            match.group(3)
+        if (
+            "-profile-skills-mindscapes"
+            not in href
+        ):
+            continue
+
+        full_url = urljoin(
+            INDEX_URL,
+            href
         )
+
+        marker = (
+            "/zenless-zone-zero/"
+        )
+
+        if marker not in full_url:
+            continue
+
+        slug_part = full_url.split(
+            marker,
+            1
+        )[1]
+
+        slug = slug_part.split(
+            "-profile-skills-mindscapes",
+            1
+        )[0]
+
+        if not slug:
+            continue
 
         if slug in seen:
             continue
 
-        if not raw_name:
-            continue
-
         seen.add(slug)
+
+        raw_name = clean_name(
+            link["text"]
+        )
 
         normalized_name = (
             aliases.get(raw_name)
+            if raw_name
+            else None
         )
 
         pages.append(
@@ -120,10 +176,7 @@ def main():
                     slug,
 
                 "profile_url":
-                    (
-                        "https://www.icy-veins.com"
-                        + profile_path
-                    ),
+                    full_url,
 
                 "team_url":
                     (
@@ -137,21 +190,24 @@ def main():
 
     pages.sort(
         key=lambda item:
-            item["raw_name"].lower()
+            item["slug"]
     )
 
     unmapped = sorted(
         {
             item["raw_name"]
             for item in pages
-            if not item[
-                "normalized_name"
-            ]
+            if (
+                item["raw_name"]
+                and not item[
+                    "normalized_name"
+                ]
+            )
         }
     )
 
     data = {
-        "schema": 2,
+        "schema": 3,
 
         "source":
             "icyveins",
