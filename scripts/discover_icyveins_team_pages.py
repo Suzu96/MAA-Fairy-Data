@@ -53,7 +53,9 @@ def main():
                 "(Windows NT 10.0; Win64; x64) "
                 "AppleWebKit/537.36 "
                 "Chrome/153 Safari/537.36"
-            )
+            ),
+            "Accept-Language":
+                "en-US,en;q=0.9"
         }
     )
 
@@ -70,11 +72,15 @@ def main():
         )
 
     pattern = re.compile(
-        r'<a\b[^>]*href="'
+        r'<a\b[^>]*href=["\']'
+        r'(?:https://www\.icy-veins\.com)?'
         r'(/zenless-zone-zero/'
         r'([a-z0-9-]+)'
         r'-profile-skills-mindscapes)'
-        r'"[^>]*>(.*?)</a>',
+        r'(?:[?#][^"\']*)?'
+        r'["\'][^>]*>'
+        r'(.*?)'
+        r'</a>',
         flags=re.I | re.S
     )
 
@@ -90,20 +96,13 @@ def main():
             match.group(3)
         )
 
-        if not raw_name:
-            continue
-
         if slug in seen:
             continue
 
-        seen.add(slug)
+        if not raw_name:
+            continue
 
-        team_url = (
-            "https://www.icy-veins.com/"
-            "zenless-zone-zero/"
-            + slug
-            + "-teams"
-        )
+        seen.add(slug)
 
         normalized_name = (
             aliases.get(raw_name)
@@ -127,13 +126,18 @@ def main():
                     ),
 
                 "team_url":
-                    team_url
+                    (
+                        "https://www.icy-veins.com/"
+                        "zenless-zone-zero/"
+                        + slug
+                        + "-teams"
+                    )
             }
         )
 
     pages.sort(
         key=lambda item:
-            item["raw_name"]
+            item["raw_name"].lower()
     )
 
     unmapped = sorted(
@@ -147,7 +151,7 @@ def main():
     )
 
     data = {
-        "schema": 1,
+        "schema": 2,
 
         "source":
             "icyveins",
