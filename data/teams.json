@@ -1,40 +1,12 @@
 {
-  "schema": 5,
-  "generated_at": "2026-09-22T11:59:06Z",
+  "schema": 6,
+  "generated_at": "2026-09-22T12:01:05Z",
   "team_count": 33,
-  "core_detected_count": 32,
-  "core_missing_count": 1,
-  "core_conflict_count": 1,
+  "recommended_for_detected_count": 32,
+  "recommended_for_missing_count": 1,
+  "multi_anchor_team_count": 1,
   "multi_source_count": 2,
   "teams": [
-    {
-      "id": "team_7587bc6d5b3f",
-      "members": [
-        "星见雅",
-        "南宫羽",
-        "浮波柚叶"
-      ],
-      "core": "星见雅",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "星見雅編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        },
-        {
-          "site": "Icy Veins",
-          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
-          "section": "Hoshimi Miyabi's Best Teams",
-          "page_fetched_at": "2026-09-22T11:59:06Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 2
-    },
     {
       "id": "team_7df42ee5740d",
       "members": [
@@ -42,7 +14,10 @@
         "星见雅",
         "月城柳"
       ],
-      "core": "月城柳",
+      "recommended_for": [
+        "月城柳",
+        "星见雅"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
@@ -50,153 +25,52 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "月城柳のパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "recommended_for": "月城柳",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
         },
         {
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "section": "Hoshimi Miyabi's Best Teams",
-          "page_fetched_at": "2026-09-22T11:59:06Z"
+          "recommended_for": "星见雅",
+          "page_fetched_at": "2026-09-22T12:01:05Z"
         }
       ],
       "tags": [],
       "notes": "",
-      "core_conflicts": [
-        "星见雅"
-      ],
       "source_count": 2
     },
     {
-      "id": "team_0a5cae10cc48",
+      "id": "team_7587bc6d5b3f",
       "members": [
-        "派派·韦尔",
-        "赛斯·洛威尔",
-        "露西亚娜·德·蒙特夫"
+        "星见雅",
+        "南宫羽",
+        "浮波柚叶"
       ],
-      "core": null,
+      "recommended_for": [
+        "星见雅"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
         {
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
-          "section": "A級のみ限定キャラなしパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_fee3c1acb21e",
-      "members": [
-        "莱特",
-        "柏妮思·怀特",
-        "「11号」"
-      ],
-      "core": "「11号」",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
+          "section": "星見雅編成",
+          "recommended_for": "星见雅",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        },
         {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "11号のパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "recommended_for": "星见雅",
+          "page_fetched_at": "2026-09-22T12:01:05Z"
         }
       ],
       "tags": [],
       "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_8bd454eef12a",
-      "members": [
-        "「席德」",
-        "「扳机」",
-        "希希芙"
-      ],
-      "core": "「席德」",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "シードのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_594ea5f80129",
-      "members": [
-        "卢西娅·艾洛温",
-        "仪玄",
-        "琉音"
-      ],
-      "core": "仪玄",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "次点の最強パーティは「イーシェン」編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_6b5edb9c3b4f",
-      "members": [
-        "卢西娅·艾洛温",
-        "伊德海莉·墨菲",
-        "琉音"
-      ],
-      "core": "伊德海莉·墨菲",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "イドリーのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_3e997dc2bd67",
-      "members": [
-        "耀嘉音",
-        "伊芙琳·舒瓦利耶",
-        "莱特"
-      ],
-      "core": "伊芙琳·舒瓦利耶",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "イヴリンのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
+      "source_count": 2
     },
     {
       "id": "team_05be6bbcfb2f",
@@ -205,7 +79,9 @@
         "诺姆·霍洛维尔",
         "亚历山德丽娜·莎芭丝缇安"
       ],
-      "core": "克拉蕾·弗林特",
+      "recommended_for": [
+        "克拉蕾·弗林特"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
@@ -213,337 +89,8 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "鋭御の最強パーティはクラレッタ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_f27c2aa0cbd0",
-      "members": [
-        "青衣",
-        "凯撒·金",
-        "可琳·威克斯"
-      ],
-      "core": "可琳·威克斯",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "カリンのパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_c09116d9a685",
-      "members": [
-        "叶瞬光",
-        "千夏",
-        "琉音"
-      ],
-      "core": "叶瞬光",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "ゼンゼロの最強パーティは「瞬光」編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_0da3090a1af0",
-      "members": [
-        "耀嘉音",
-        "奥菲丝·马格努森&「鬼火」",
-        "莱特"
-      ],
-      "core": "奥菲丝·马格努森&「鬼火」",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "オルペウスのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_b8ed74b1b24e",
-      "members": [
-        "青衣",
-        "凯撒·金",
-        "安东·伊万诺夫"
-      ],
-      "core": "安东·伊万诺夫",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "アンドーのパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_f965666bf8fd",
-      "members": [
-        "卢西娅·艾洛温",
-        "星徽·比利·奇德",
-        "琉音"
-      ],
-      "core": "星徽·比利·奇德",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "スターライトビリーのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_46e86cfd3527",
-      "members": [
-        "星见雅",
-        "冯·莱卡恩",
-        "苍角"
-      ],
-      "core": "星见雅",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Icy Veins",
-          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
-          "section": "Hoshimi Miyabi's Best Teams",
-          "page_fetched_at": "2026-09-22T11:59:06Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_5e114a74a1c6",
-      "members": [
-        "星见雅",
-        "浮波柚叶",
-        "柏妮思·怀特"
-      ],
-      "core": "星见雅",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Icy Veins",
-          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
-          "section": "Hoshimi Miyabi's Best Teams",
-          "page_fetched_at": "2026-09-22T11:59:06Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_6705ea212529",
-      "members": [
-        "星见雅",
-        "浮波柚叶",
-        "薇薇安·班希"
-      ],
-      "core": "星见雅",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Icy Veins",
-          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
-          "section": "Hoshimi Miyabi's Best Teams",
-          "page_fetched_at": "2026-09-22T11:59:06Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_e829c465df20",
-      "members": [
-        "普罗米娅",
-        "南宫羽",
-        "浮波柚叶"
-      ],
-      "core": "普罗米娅",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "プロメイアのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_c8fe77b3f8d7",
-      "members": [
-        "青衣",
-        "妮可·德玛拉",
-        "朱鸢"
-      ],
-      "core": "朱鸢",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "朱鳶（しゅえん）のパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_d3b4e0cfc8d3",
-      "members": [
-        "比利·奇德",
-        "凯撒·金",
-        "妮可·德玛拉"
-      ],
-      "core": "比利·奇德",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "ビリーのパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_a099e7ed3919",
-      "members": [
-        "柏妮思·怀特",
-        "派派·韦尔",
-        "凯撒·金"
-      ],
-      "core": "派派·韦尔",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "パイパーのパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_d57be0858d8d",
-      "members": [
-        "浅羽悠真",
-        "青衣",
-        "亚历山德丽娜·莎芭丝缇安"
-      ],
-      "core": "浅羽悠真",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "悠真（はるまさ）のパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_636b7de23ad0",
-      "members": [
-        "爱丽丝·泰姆菲尔德",
-        "薇薇安·班希",
-        "浮波柚叶"
-      ],
-      "core": "爱丽丝·泰姆菲尔德",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "アリスのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_6b7f004c6b07",
-      "members": [
-        "爱芮",
-        "千夏",
-        "南宫羽"
-      ],
-      "core": "爱芮",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "その他の異常のおすすめパーティはアリア編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "recommended_for": "克拉蕾·弗林特",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
         }
       ],
       "tags": [],
@@ -557,7 +104,9 @@
         "潘引壶",
         "露西亚娜·德·蒙特夫"
       ],
-      "core": "狛野真斗",
+      "recommended_for": [
+        "狛野真斗"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
@@ -565,7 +114,8 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "狛野真斗のパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "recommended_for": "狛野真斗",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
         }
       ],
       "tags": [],
@@ -573,131 +123,24 @@
       "source_count": 1
     },
     {
-      "id": "team_d90b50cf1295",
-      "members": [
-        "凯撒·金",
-        "露西亚娜·德·蒙特夫",
-        "猫宫又奈"
-      ],
-      "core": "猫宫又奈",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "猫又のパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_ac9f2f3a2a39",
-      "members": [
-        "柏妮思·怀特",
-        "凯撒·金",
-        "简·杜"
-      ],
-      "core": "简·杜",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "ジェーンのパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_4fa6ddac22e9",
-      "members": [
-        "卢西娅·艾洛温",
-        "般岳",
-        "琉音"
-      ],
-      "core": "般岳",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "盤岳のパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_72472663d6ef",
-      "members": [
-        "莱特",
-        "凯撒·金",
-        "艾莲·乔"
-      ],
-      "core": "艾莲·乔",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "エレンのパーティ",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_74451ec9e9b0",
-      "members": [
-        "爱芮",
-        "维琳娜·艾嘉德",
-        "蕾米埃尔·丹"
-      ],
-      "core": "蕾米埃尔·丹",
-      "archetype": null,
-      "priority": 0,
-      "sources": [
-        {
-          "site": "Game8",
-          "url": "https://game8.jp/zenless/614253",
-          "section": "異常の最強パーティはレミエール編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
-        }
-      ],
-      "tags": [],
-      "notes": "",
-      "source_count": 1
-    },
-    {
-      "id": "team_b862fed38afc",
+      "id": "team_0da3090a1af0",
       "members": [
         "耀嘉音",
-        "薇薇安·班希",
-        "月城柳"
+        "奥菲丝·马格努森&「鬼火」",
+        "莱特"
       ],
-      "core": "薇薇安·班希",
+      "recommended_for": [
+        "奥菲丝·马格努森&「鬼火」"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
         {
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
-          "section": "ビビアンのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "section": "オルペウスのパーティ編成",
+          "recommended_for": "奥菲丝·马格努森&「鬼火」",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
         }
       ],
       "tags": [],
@@ -711,7 +154,9 @@
         "莱特",
         "雨果·维拉德"
       ],
-      "core": "雨果·维拉德",
+      "recommended_for": [
+        "雨果·维拉德"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
@@ -719,7 +164,233 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "ヒューゴのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "recommended_for": "雨果·维拉德",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_3e997dc2bd67",
+      "members": [
+        "耀嘉音",
+        "伊芙琳·舒瓦利耶",
+        "莱特"
+      ],
+      "recommended_for": [
+        "伊芙琳·舒瓦利耶"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "イヴリンのパーティ編成",
+          "recommended_for": "伊芙琳·舒瓦利耶",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_46e86cfd3527",
+      "members": [
+        "星见雅",
+        "冯·莱卡恩",
+        "苍角"
+      ],
+      "recommended_for": [
+        "星见雅"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "recommended_for": "星见雅",
+          "page_fetched_at": "2026-09-22T12:01:05Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_4fa6ddac22e9",
+      "members": [
+        "卢西娅·艾洛温",
+        "般岳",
+        "琉音"
+      ],
+      "recommended_for": [
+        "般岳"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "盤岳のパーティ編成",
+          "recommended_for": "般岳",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_594ea5f80129",
+      "members": [
+        "卢西娅·艾洛温",
+        "仪玄",
+        "琉音"
+      ],
+      "recommended_for": [
+        "仪玄"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "次点の最強パーティは「イーシェン」編成",
+          "recommended_for": "仪玄",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_5e114a74a1c6",
+      "members": [
+        "星见雅",
+        "浮波柚叶",
+        "柏妮思·怀特"
+      ],
+      "recommended_for": [
+        "星见雅"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "recommended_for": "星见雅",
+          "page_fetched_at": "2026-09-22T12:01:05Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_636b7de23ad0",
+      "members": [
+        "爱丽丝·泰姆菲尔德",
+        "薇薇安·班希",
+        "浮波柚叶"
+      ],
+      "recommended_for": [
+        "爱丽丝·泰姆菲尔德"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "アリスのパーティ編成",
+          "recommended_for": "爱丽丝·泰姆菲尔德",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_6705ea212529",
+      "members": [
+        "星见雅",
+        "浮波柚叶",
+        "薇薇安·班希"
+      ],
+      "recommended_for": [
+        "星见雅"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Icy Veins",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+          "section": "Hoshimi Miyabi's Best Teams",
+          "recommended_for": "星见雅",
+          "page_fetched_at": "2026-09-22T12:01:05Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_6b5edb9c3b4f",
+      "members": [
+        "卢西娅·艾洛温",
+        "伊德海莉·墨菲",
+        "琉音"
+      ],
+      "recommended_for": [
+        "伊德海莉·墨菲"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "イドリーのパーティ編成",
+          "recommended_for": "伊德海莉·墨菲",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_6b7f004c6b07",
+      "members": [
+        "爱芮",
+        "千夏",
+        "南宫羽"
+      ],
+      "recommended_for": [
+        "爱芮"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "その他の異常のおすすめパーティはアリア編成",
+          "recommended_for": "爱芮",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
         }
       ],
       "tags": [],
@@ -733,7 +404,9 @@
         "零号·安比",
         "「扳机」"
       ],
-      "core": "零号·安比",
+      "recommended_for": [
+        "零号·安比"
+      ],
       "archetype": null,
       "priority": 0,
       "sources": [
@@ -741,7 +414,431 @@
           "site": "Game8",
           "url": "https://game8.jp/zenless/614253",
           "section": "0号アンビーのパーティ編成",
-          "page_fetched_at": "2026-09-22T11:59:04Z"
+          "recommended_for": "零号·安比",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_72472663d6ef",
+      "members": [
+        "莱特",
+        "凯撒·金",
+        "艾莲·乔"
+      ],
+      "recommended_for": [
+        "艾莲·乔"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "エレンのパーティ",
+          "recommended_for": "艾莲·乔",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_74451ec9e9b0",
+      "members": [
+        "爱芮",
+        "维琳娜·艾嘉德",
+        "蕾米埃尔·丹"
+      ],
+      "recommended_for": [
+        "蕾米埃尔·丹"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "異常の最強パーティはレミエール編成",
+          "recommended_for": "蕾米埃尔·丹",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_8bd454eef12a",
+      "members": [
+        "「席德」",
+        "「扳机」",
+        "希希芙"
+      ],
+      "recommended_for": [
+        "「席德」"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "シードのパーティ編成",
+          "recommended_for": "「席德」",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_a099e7ed3919",
+      "members": [
+        "柏妮思·怀特",
+        "派派·韦尔",
+        "凯撒·金"
+      ],
+      "recommended_for": [
+        "派派·韦尔"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "パイパーのパーティ",
+          "recommended_for": "派派·韦尔",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_ac9f2f3a2a39",
+      "members": [
+        "柏妮思·怀特",
+        "凯撒·金",
+        "简·杜"
+      ],
+      "recommended_for": [
+        "简·杜"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "ジェーンのパーティ",
+          "recommended_for": "简·杜",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_b862fed38afc",
+      "members": [
+        "耀嘉音",
+        "薇薇安·班希",
+        "月城柳"
+      ],
+      "recommended_for": [
+        "薇薇安·班希"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "ビビアンのパーティ編成",
+          "recommended_for": "薇薇安·班希",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_b8ed74b1b24e",
+      "members": [
+        "青衣",
+        "凯撒·金",
+        "安东·伊万诺夫"
+      ],
+      "recommended_for": [
+        "安东·伊万诺夫"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "アンドーのパーティ",
+          "recommended_for": "安东·伊万诺夫",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_c09116d9a685",
+      "members": [
+        "叶瞬光",
+        "千夏",
+        "琉音"
+      ],
+      "recommended_for": [
+        "叶瞬光"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "ゼンゼロの最強パーティは「瞬光」編成",
+          "recommended_for": "叶瞬光",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_c8fe77b3f8d7",
+      "members": [
+        "青衣",
+        "妮可·德玛拉",
+        "朱鸢"
+      ],
+      "recommended_for": [
+        "朱鸢"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "朱鳶（しゅえん）のパーティ",
+          "recommended_for": "朱鸢",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_d3b4e0cfc8d3",
+      "members": [
+        "比利·奇德",
+        "凯撒·金",
+        "妮可·德玛拉"
+      ],
+      "recommended_for": [
+        "比利·奇德"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "ビリーのパーティ",
+          "recommended_for": "比利·奇德",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_d57be0858d8d",
+      "members": [
+        "浅羽悠真",
+        "青衣",
+        "亚历山德丽娜·莎芭丝缇安"
+      ],
+      "recommended_for": [
+        "浅羽悠真"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "悠真（はるまさ）のパーティ編成",
+          "recommended_for": "浅羽悠真",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_d90b50cf1295",
+      "members": [
+        "凯撒·金",
+        "露西亚娜·德·蒙特夫",
+        "猫宫又奈"
+      ],
+      "recommended_for": [
+        "猫宫又奈"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "猫又のパーティ",
+          "recommended_for": "猫宫又奈",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_e829c465df20",
+      "members": [
+        "普罗米娅",
+        "南宫羽",
+        "浮波柚叶"
+      ],
+      "recommended_for": [
+        "普罗米娅"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "プロメイアのパーティ編成",
+          "recommended_for": "普罗米娅",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_f27c2aa0cbd0",
+      "members": [
+        "青衣",
+        "凯撒·金",
+        "可琳·威克斯"
+      ],
+      "recommended_for": [
+        "可琳·威克斯"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "カリンのパーティ",
+          "recommended_for": "可琳·威克斯",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_f965666bf8fd",
+      "members": [
+        "卢西娅·艾洛温",
+        "星徽·比利·奇德",
+        "琉音"
+      ],
+      "recommended_for": [
+        "星徽·比利·奇德"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "スターライトビリーのパーティ編成",
+          "recommended_for": "星徽·比利·奇德",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_fee3c1acb21e",
+      "members": [
+        "莱特",
+        "柏妮思·怀特",
+        "「11号」"
+      ],
+      "recommended_for": [
+        "「11号」"
+      ],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "11号のパーティ",
+          "recommended_for": "「11号」",
+          "page_fetched_at": "2026-09-22T12:01:03Z"
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "source_count": 1
+    },
+    {
+      "id": "team_0a5cae10cc48",
+      "members": [
+        "派派·韦尔",
+        "赛斯·洛威尔",
+        "露西亚娜·德·蒙特夫"
+      ],
+      "recommended_for": [],
+      "archetype": null,
+      "priority": 0,
+      "sources": [
+        {
+          "site": "Game8",
+          "url": "https://game8.jp/zenless/614253",
+          "section": "A級のみ限定キャラなしパーティ",
+          "recommended_for": null,
+          "page_fetched_at": "2026-09-22T12:01:03Z"
         }
       ],
       "tags": [],
