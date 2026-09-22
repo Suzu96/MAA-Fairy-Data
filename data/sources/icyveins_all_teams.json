@@ -3,9 +3,75 @@
   "source": "icyveins",
   "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
   "http_status": 200,
-  "fetched_at": "2026-09-22T09:49:27Z",
+  "fetched_at": "2026-09-22T10:13:51Z",
   "core": "星见雅",
-  "team_count": 0,
-  "teams": [],
+  "team_count": 5,
+  "teams": [
+    {
+      "raw_members": [
+        "Hoshimi Miyabi",
+        "Nangong Yu",
+        "Ukinami Yuzuha"
+      ],
+      "normalized_members": [
+        "星见雅",
+        "南宫羽",
+        "浮波柚叶"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "raw_members": [
+        "Hoshimi Miyabi",
+        "Ukinami Yuzuha",
+        "Vivian"
+      ],
+      "normalized_members": [
+        "星见雅",
+        "浮波柚叶",
+        "薇薇安·班希"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "raw_members": [
+        "Hoshimi Miyabi",
+        "Ukinami Yuzuha",
+        "Burnice White"
+      ],
+      "normalized_members": [
+        "星见雅",
+        "浮波柚叶",
+        "柏妮思·怀特"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "raw_members": [
+        "Hoshimi Miyabi",
+        "Astra Yao",
+        "Tsukishiro Yanagi"
+      ],
+      "normalized_members": [
+        "星见雅",
+        "耀嘉音",
+        "月城柳"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "raw_members": [
+        "Hoshimi Miyabi",
+        "Von Lycaon",
+        "Soukaku"
+      ],
+      "normalized_members": [
+        "星见雅",
+        "冯·莱卡恩",
+        "苍角"
+      ],
+      "fully_normalized": true
+    }
+  ],
   "warnings": []
 }
