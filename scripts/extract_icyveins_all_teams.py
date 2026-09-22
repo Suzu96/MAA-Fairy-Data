@@ -61,10 +61,7 @@ def find_best_teams_section(raw_html):
             match.group(1)
         )
 
-        if (
-            "Hoshimi Miyabi's Best Teams"
-            not in heading
-        ):
+        if heading != "Hoshimi Miyabi's Best Teams":
             continue
 
         start = match.end()
