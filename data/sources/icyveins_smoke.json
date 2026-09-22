@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "source": "icyveins",
+  "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+  "http_status": 200,
+  "fetched_at": "2026-09-22T09:28:29Z",
+  "title": "Hoshimi Miyabi Best Team Compositions and Character Synergies - Zenless Zone Zero (ZZZ) - Icy Veins",
+  "checks": {
+    "has_miyabi": true,
+    "has_nangong_yu": true,
+    "has_yuzuha": true,
+    "has_yanagi": true,
+    "has_best_teams_section": true
+  }
+}
