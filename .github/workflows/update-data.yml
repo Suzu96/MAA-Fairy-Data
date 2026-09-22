@@ -46,6 +46,9 @@ jobs:
       - name: Discover Icy Veins team pages
         run: python scripts/discover_icyveins_team_pages.py
 
+      - name: Check Icy Veins team pages
+        run: python scripts/check_icyveins_team_pages.py
+
       - name: Build normalized team database
         run: python scripts/build_teams.py
 
@@ -69,6 +72,7 @@ jobs:
           git add data/sources/icyveins_all_teams.json
           git add data/sources/icyveins_synergy_miyabi.json
           git add data/sources/icyveins_team_pages.json
+          git add data/sources/icyveins_team_page_status.json
           git add data/teams.json
           git add data/synergy.json
 
