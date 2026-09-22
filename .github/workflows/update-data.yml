@@ -34,8 +34,11 @@ jobs:
       - name: Test Icy Veins access
         run: python scripts/fetch_icyveins_test.py
 
-      - name: Test Icy Veins team extraction
+      - name: Test Icy Veins single team extraction
         run: python scripts/extract_icyveins_team_test.py
+
+      - name: Extract all Icy Veins Miyabi teams
+        run: python scripts/extract_icyveins_all_teams.py
 
       - name: Build normalized team database
         run: python scripts/build_teams.py
@@ -51,6 +54,7 @@ jobs:
           git add data/sources/game8_all_teams.json
           git add data/sources/icyveins_smoke.json
           git add data/sources/icyveins_team_test.json
+          git add data/sources/icyveins_all_teams.json
           git add data/teams.json
 
           if git diff --cached --quiet; then
