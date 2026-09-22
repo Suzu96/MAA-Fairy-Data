@@ -46,6 +46,9 @@ jobs:
       - name: Build normalized team database
         run: python scripts/build_teams.py
 
+      - name: Build normalized synergy database
+        run: python scripts/build_synergy.py
+
       - name: Commit generated data
         run: |
           git config user.name "MAA-Fairy Bot"
@@ -60,6 +63,7 @@ jobs:
           git add data/sources/icyveins_all_teams.json
           git add data/sources/icyveins_synergy_miyabi.json
           git add data/teams.json
+          git add data/synergy.json
 
           if git diff --cached --quiet; then
             echo "No data changes."
