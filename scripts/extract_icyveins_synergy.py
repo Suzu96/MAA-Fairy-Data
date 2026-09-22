@@ -41,9 +41,7 @@ def clean_text(value: str) -> str:
         value
     )
 
-    value = html.unescape(
-        value
-    )
+    value = html.unescape(value)
 
     value = re.sub(
         r"\s+",
@@ -64,9 +62,7 @@ def load_aliases():
     return data["aliases"]
 
 
-def find_synergy_section(
-    raw_html
-):
+def find_synergy_section(raw_html):
     headings = list(
         re.finditer(
             r"<h2\b[^>]*>(.*?)</h2>",
@@ -80,9 +76,7 @@ def find_synergy_section(
         "With Hoshimi Miyabi"
     )
 
-    for index, match in enumerate(
-        headings
-    ):
+    for index, match in enumerate(headings):
 
         heading = clean_text(
             match.group(1)
@@ -98,17 +92,35 @@ def find_synergy_section(
                 index + 1
             ].start()
         else:
-            end = len(
-                raw_html
-            )
+            end = len(raw_html)
 
-        return raw_html[
-            start:end
-        ]
+        return raw_html[start:end]
 
     raise RuntimeError(
         "Synergy section not found."
     )
+
+
+def remove_repeated_name(
+    text,
+    raw_name
+):
+    text = text.strip()
+
+    pattern = (
+        r"^(?:"
+        + re.escape(raw_name)
+        + r"\s*)+"
+    )
+
+    text = re.sub(
+        pattern,
+        "",
+        text,
+        flags=re.I
+    )
+
+    return text.strip()
 
 
 def main():
@@ -140,8 +152,8 @@ def main():
             errors="replace"
         )
 
-    section_html = (
-        find_synergy_section(raw)
+    section_html = find_synergy_section(
+        raw
     )
 
     section_text = clean_text(
@@ -150,14 +162,9 @@ def main():
 
     core = "星见雅"
 
-    english_aliases = []
+    characters = []
 
-    for raw_name, standard_name in (
-        aliases.items()
-    ):
-
-        if not raw_name:
-            continue
+    for raw_name, standard_name in aliases.items():
 
         if raw_name == standard_name:
             continue
@@ -168,24 +175,8 @@ def main():
         ):
             continue
 
-        if raw_name not in section_text:
-            continue
-
         if standard_name == core:
             continue
-
-        english_aliases.append(
-            (
-                raw_name,
-                standard_name
-            )
-        )
-
-    positions = []
-
-    for raw_name, standard_name in (
-        english_aliases
-    ):
 
         match = re.search(
             re.escape(raw_name),
@@ -195,7 +186,7 @@ def main():
         if not match:
             continue
 
-        positions.append(
+        characters.append(
             {
                 "position":
                     match.start(),
@@ -208,26 +199,21 @@ def main():
             }
         )
 
-    positions.sort(
+    characters.sort(
         key=lambda item:
             item["position"]
     )
 
-    # Remove duplicate normalized names.
     unique = []
     seen = set()
 
-    for item in positions:
+    for item in characters:
 
-        character = item[
-            "character"
-        ]
-
-        if character in seen:
+        if item["character"] in seen:
             continue
 
         seen.add(
-            character
+            item["character"]
         )
 
         unique.append(
@@ -236,13 +222,9 @@ def main():
 
     synergies = []
 
-    for index, item in enumerate(
-        unique
-    ):
+    for index, item in enumerate(unique):
 
-        start = item[
-            "position"
-        ]
+        start = item["position"]
 
         if index + 1 < len(unique):
             end = unique[
@@ -257,19 +239,10 @@ def main():
             start:end
         ]
 
-        # Remove the repeated character
-        # name at the beginning.
-        chunk = re.sub(
-            r"^"
-            + re.escape(
-                item["raw_name"]
-            )
-            + r"\s*",
-            "",
-            chunk
+        chunk = remove_repeated_name(
+            chunk,
+            item["raw_name"]
         )
-
-        chunk = chunk.strip()
 
         synergies.append(
             {
@@ -287,8 +260,79 @@ def main():
             }
         )
 
+    by_partner = {
+        item["partner"]: item
+        for item in synergies
+    }
+
+    shared_stunner_partners = [
+        "冯·莱卡恩",
+        "莱特",
+        "琉音"
+    ]
+
+    dialyn_item = by_partner.get(
+        "琉音"
+    )
+
+    if dialyn_item:
+        dialyn_reason = dialyn_item.get(
+            "source_reason",
+            ""
+        )
+
+        marker = "Other Good Stunners"
+
+        if marker in dialyn_reason:
+
+            shared_reason = dialyn_reason
+
+            for partner in (
+                shared_stunner_partners
+            ):
+                item = by_partner.get(
+                    partner
+                )
+
+                if not item:
+                    continue
+
+                item["shared_group"] = (
+                    "other_good_stunners"
+                )
+
+                item["shared_reason"] = (
+                    shared_reason
+                )
+
+            # Lycaon and Lighter currently
+            # have no independent prose.
+            for partner in [
+                "冯·莱卡恩",
+                "莱特"
+            ]:
+                item = by_partner.get(
+                    partner
+                )
+
+                if item:
+                    item[
+                        "source_reason"
+                    ] = None
+
+    empty_reason_count = sum(
+        1
+        for item in synergies
+        if not item.get(
+            "source_reason"
+        )
+        and not item.get(
+            "shared_reason"
+        )
+    )
+
     data = {
-        "schema": 1,
+        "schema": 2,
 
         "source":
             "icyveins",
@@ -316,9 +360,10 @@ def main():
             core,
 
         "synergy_count":
-            len(
-                synergies
-            ),
+            len(synergies),
+
+        "empty_reason_count":
+            empty_reason_count,
 
         "synergies":
             synergies
