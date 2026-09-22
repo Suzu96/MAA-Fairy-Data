@@ -2,6 +2,10 @@ name: Validate Data
 
 on:
   workflow_dispatch:
+
+  schedule:
+    - cron: "17 19 * * *"
+
   push:
     paths:
       - "manifest.json"
