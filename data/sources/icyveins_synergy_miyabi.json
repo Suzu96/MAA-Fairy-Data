@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "source": "icyveins",
+  "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+  "http_status": 200,
+  "fetched_at": "2026-09-22T12:03:38Z",
+  "core": "星见雅",
+  "synergy_count": 9,
+  "synergies": [
+    {
+      "core": "星见雅",
+      "partner": "浮波柚叶",
+      "raw_partner": "Ukinami Yuzuha",
+      "source_reason": "Ukinami Yuzuha Yuzuha is the best generalist Anomaly Support in the game at this time, and builds a sizable amount of Physical Anomaly of her own, allowing for frequent Disorder triggers which help build additional Fallen Frost stacks. She also buffs a considerable amount of ATK% and DMG%, and since most Miyabis are built fully on Crit Rate and Crit DMG, there aren't that many diminishing returns to be worried about either."
+    },
+    {
+      "core": "星见雅",
+      "partner": "南宫羽",
+      "raw_partner": "Nangong Yu",
+      "source_reason": "Nangong Yu Nangong Yu is by far the best Stunner for any Anomaly user. She provides a tremendous amount of DPS support for Anomaly teams, and is also a very safe option due to stunning enemies quite fast. She causes the unique Polarity Disorder effect, which does not consume Anomaly effects, but still generates a Fallen Frost stack. This makes her a perfect option to pair with Miyabi."
+    },
+    {
+      "core": "星见雅",
+      "partner": "薇薇安·班希",
+      "raw_partner": "Vivian",
+      "source_reason": "Vivian Vivian is a great sub DPS for any Anomaly team, and synergizes well with Miyabi, especially when also running Yuzuha. She provides good Anomaly buildup from off-field, helping Miyabi build Fallen Frost stacks, and Vivian's own DPS is nothing to scoff at either - even next to a Void Hunter!"
+    },
+    {
+      "core": "星见雅",
+      "partner": "月城柳",
+      "raw_partner": "Tsukishiro Yanagi",
+      "source_reason": "Tsukishiro Yanagi Yanagi is another great sup-DPS, which can trigger Disorder with her EX Special, even when the Anomaly bars aren't filled yet. This allows for a much higher amount of Fallen Frost charges, fueling Miyabi's own DPS potential, even if Yanagi herself doesn't provide any meaningful bonuses. This is more than enough though, and even to this day we are seeing quite a few speed-kills utilizing this specific aspect of Yanagi's kit, allowing Miyabi to unleash her full DPS potential."
+    },
+    {
+      "core": "星见雅",
+      "partner": "冯·莱卡恩",
+      "raw_partner": "Von Lycaon",
+      "source_reason": ""
+    },
+    {
+      "core": "星见雅",
+      "partner": "莱特",
+      "raw_partner": "Lighter",
+      "source_reason": ""
+    },
+    {
+      "core": "星见雅",
+      "partner": "琉音",
+      "raw_partner": "Dialyn",
+      "source_reason": "Other Good Stunners Other great stun options include Von Lycaon and Lighter who are great sources of Stun with lower field time, while also making the enemy more vulnerable to Ice DMG . This makes them good options if you don't want to go all in on Anomaly Disorder triggers, but instead focus more on bursting during Stun windows. Dialyn can grant Miyabi a second Ultimate, which is an additional 3 Fallen Frost charges, while also increasing the stun multiplier and window."
+    },
+    {
+      "core": "星见雅",
+      "partner": "耀嘉音",
+      "raw_partner": "Astra Yao",
+      "source_reason": "Astra Yao Astra Yao provides good damage buffs by increasing ATK%, DMG%, and Crit DMG%, while also offering frequent quick assists and Chain attacks. If you're not running a full Anomaly team, she is one of the best Supports you can play alongside Miyabi."
+    },
+    {
+      "core": "星见雅",
+      "partner": "苍角",
+      "raw_partner": "Soukaku",
+      "source_reason": "Soukaku Soukaku is a great support for any Ice-based team composition, providing an increase to Ice DMG , RES Shred and even an ATK buff making her a powerful substitute compared to Astra Yao ."
+    }
+  ]
+}
