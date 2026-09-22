@@ -1,0 +1,43 @@
+name: Validate Data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "manifest.json"
+      - "data/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate JSON files
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = [
+              Path("manifest.json"),
+              Path("data/teams.json"),
+              Path("data/synergy.json"),
+              Path("data/characters.json"),
+              Path("data/sources.json"),
+          ]
+
+          for file in files:
+              with file.open("r", encoding="utf-8") as f:
+                  json.load(f)
+              print(f"OK: {file}")
+
+          print("All JSON files are valid.")
+          PY
