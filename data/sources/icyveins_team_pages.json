@@ -1,504 +1,494 @@
 {
-  "schema": 3,
+  "schema": 4,
   "source": "icyveins",
   "http_status": 200,
-  "fetched_at": "2026-09-22T14:59:24Z",
+  "fetched_at": "2026-09-22T15:04:07Z",
   "page_count": 62,
-  "unmapped_name_count": 62,
+  "mapped_name_count": 11,
+  "unmapped_name_count": 51,
   "unmapped_names": [
-    "Alexandrina Sebastiane S-Rank",
-    "Alice Thymefield S-Rank",
-    "Anby Demara A-Rank",
-    "Anton Ivanov A-Rank",
-    "Aria S-Rank",
-    "Asaba Harumasa S-Rank",
-    "Astra Yao S-Rank",
-    "Banyue S-Rank",
-    "Ben Bigger A-Rank",
-    "Billy Kid A-Rank",
-    "Burnice White S-Rank",
-    "Caesar King S-Rank",
-    "Cissia S-Rank",
-    "Claret S-Rank",
-    "Corin Wickes A-Rank",
-    "Dialyn S-Rank",
-    "Ellen Joe S-Rank",
-    "Evelyn Chevalier S-Rank",
-    "Grace Howard S-Rank",
-    "Hoshimi Miyabi S-Rank",
-    "Hugo Vlad S-Rank",
-    "Jane Doe S-Rank",
-    "Ju Fufu S-Rank",
-    "Koleda Belobog S-Rank",
-    "Komano Manato A-Rank",
-    "Lighter S-Rank",
-    "Lucia S-Rank",
-    "Lucy A-Rank",
-    "Nangong Yu S-Rank",
-    "Nekomata S-Rank",
-    "Nicole Demara A-Rank",
-    "Norma S-Rank",
-    "Orphie & Magus S-Rank",
-    "Pan Yinhu S-Rank",
-    "Phoenix S-Rank",
-    "Piper Wheel A-Rank",
-    "Promeia S-Rank",
-    "Pulchra A-Rank",
-    "Pyrois S-Rank",
-    "Qingyi S-Rank",
-    "Remielle Dan S-Rank",
-    "Roxy S-Rank",
-    "Seed S-Rank",
-    "Seth Lowell A-Rank",
-    "Severian S-Rank",
-    "Sigrid S-Rank",
-    "Soldier 0 - Anby S-Rank",
-    "Soldier 11 S-Rank",
-    "Soukaku A-Rank",
-    "Starlight Billy S-Rank",
-    "Sunna S-Rank",
-    "Trigger S-Rank",
-    "Tsukishiro Yanagi S-Rank",
-    "Ukinami Yuzuha S-Rank",
-    "Velina S-Rank",
-    "Vivian S-Rank",
-    "Von Lycaon S-Rank",
-    "Ye Shunguang S-Rank",
-    "Yidhari S-Rank",
-    "Yixuan S-Rank",
-    "Zhao S-Rank",
-    "Zhu Yuan S-Rank"
+    "Alexandrina Sebastiane",
+    "Alice Thymefield",
+    "Anby Demara",
+    "Anton Ivanov",
+    "Aria",
+    "Asaba Harumasa",
+    "Banyue",
+    "Ben Bigger",
+    "Billy Kid",
+    "Caesar King",
+    "Cissia",
+    "Claret",
+    "Corin Wickes",
+    "Ellen Joe",
+    "Evelyn Chevalier",
+    "Grace Howard",
+    "Hugo Vlad",
+    "Jane Doe",
+    "Ju Fufu",
+    "Koleda Belobog",
+    "Komano Manato",
+    "Lucia",
+    "Lucy",
+    "Nekomata",
+    "Nicole Demara",
+    "Norma",
+    "Orphie & Magus",
+    "Pan Yinhu",
+    "Phoenix",
+    "Piper Wheel",
+    "Promeia",
+    "Pulchra",
+    "Pyrois",
+    "Qingyi",
+    "Remielle Dan",
+    "Roxy",
+    "Seed",
+    "Seth Lowell",
+    "Severian",
+    "Sigrid",
+    "Soldier 0 - Anby",
+    "Soldier 11",
+    "Starlight Billy",
+    "Sunna",
+    "Trigger",
+    "Velina",
+    "Ye Shunguang",
+    "Yidhari",
+    "Yixuan",
+    "Zhao",
+    "Zhu Yuan"
   ],
   "pages": [
     {
-      "raw_name": "Alexandrina Sebastiane S-Rank",
+      "raw_name": "Alexandrina Sebastiane",
       "normalized_name": null,
       "slug": "alexandrina-sebastiane",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
     },
     {
-      "raw_name": "Alice Thymefield S-Rank",
+      "raw_name": "Alice Thymefield",
       "normalized_name": null,
       "slug": "alice-thymefield",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-teams"
     },
     {
-      "raw_name": "Anby Demara A-Rank",
+      "raw_name": "Anby Demara",
       "normalized_name": null,
       "slug": "anby-demara",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/anby-demara-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/anby-demara-teams"
     },
     {
-      "raw_name": "Anton Ivanov A-Rank",
+      "raw_name": "Anton Ivanov",
       "normalized_name": null,
       "slug": "anton-ivanov",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-teams"
     },
     {
-      "raw_name": "Aria S-Rank",
+      "raw_name": "Aria",
       "normalized_name": null,
       "slug": "aria",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/aria-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
     },
     {
-      "raw_name": "Asaba Harumasa S-Rank",
+      "raw_name": "Asaba Harumasa",
       "normalized_name": null,
       "slug": "asaba-harumasa",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-teams"
     },
     {
-      "raw_name": "Astra Yao S-Rank",
-      "normalized_name": null,
+      "raw_name": "Astra Yao",
+      "normalized_name": "耀嘉音",
       "slug": "astra-yao",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-teams"
     },
     {
-      "raw_name": "Banyue S-Rank",
+      "raw_name": "Banyue",
       "normalized_name": null,
       "slug": "banyue",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/banyue-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/banyue-teams"
     },
     {
-      "raw_name": "Ben Bigger A-Rank",
+      "raw_name": "Ben Bigger",
       "normalized_name": null,
       "slug": "ben-bigger",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/ben-bigger-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/ben-bigger-teams"
     },
     {
-      "raw_name": "Billy Kid A-Rank",
+      "raw_name": "Billy Kid",
       "normalized_name": null,
       "slug": "billy-kid",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/billy-kid-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/billy-kid-teams"
     },
     {
-      "raw_name": "Burnice White S-Rank",
-      "normalized_name": null,
+      "raw_name": "Burnice White",
+      "normalized_name": "柏妮思·怀特",
       "slug": "burnice-white",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-teams"
     },
     {
-      "raw_name": "Caesar King S-Rank",
+      "raw_name": "Caesar King",
       "normalized_name": null,
       "slug": "caesar-king",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-teams"
     },
     {
-      "raw_name": "Cissia S-Rank",
+      "raw_name": "Cissia",
       "normalized_name": null,
       "slug": "cissia",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/cissia-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/cissia-teams"
     },
     {
-      "raw_name": "Claret S-Rank",
+      "raw_name": "Claret",
       "normalized_name": null,
       "slug": "claret",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/claret-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/claret-teams"
     },
     {
-      "raw_name": "Corin Wickes A-Rank",
+      "raw_name": "Corin Wickes",
       "normalized_name": null,
       "slug": "corin-wickes",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/corin-wickes-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/corin-wickes-teams"
     },
     {
-      "raw_name": "Dialyn S-Rank",
-      "normalized_name": null,
+      "raw_name": "Dialyn",
+      "normalized_name": "琉音",
       "slug": "dialyn",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/dialyn-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/dialyn-teams"
     },
     {
-      "raw_name": "Ellen Joe S-Rank",
+      "raw_name": "Ellen Joe",
       "normalized_name": null,
       "slug": "ellen-joe",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/ellen-joe-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/ellen-joe-teams"
     },
     {
-      "raw_name": "Evelyn Chevalier S-Rank",
+      "raw_name": "Evelyn Chevalier",
       "normalized_name": null,
       "slug": "evelyn-chevalier",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/evelyn-chevalier-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/evelyn-chevalier-teams"
     },
     {
-      "raw_name": "Grace Howard S-Rank",
+      "raw_name": "Grace Howard",
       "normalized_name": null,
       "slug": "grace-howard",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/grace-howard-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/grace-howard-teams"
     },
     {
-      "raw_name": "Hoshimi Miyabi S-Rank",
-      "normalized_name": null,
+      "raw_name": "Hoshimi Miyabi",
+      "normalized_name": "星见雅",
       "slug": "hoshimi-miyabi",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams"
     },
     {
-      "raw_name": "Hugo Vlad S-Rank",
+      "raw_name": "Hugo Vlad",
       "normalized_name": null,
       "slug": "hugo-vlad",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/hugo-vlad-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/hugo-vlad-teams"
     },
     {
-      "raw_name": "Jane Doe S-Rank",
+      "raw_name": "Jane Doe",
       "normalized_name": null,
       "slug": "jane-doe",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/jane-doe-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/jane-doe-teams"
     },
     {
-      "raw_name": "Ju Fufu S-Rank",
+      "raw_name": "Ju Fufu",
       "normalized_name": null,
       "slug": "ju-fufu",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/ju-fufu-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/ju-fufu-teams"
     },
     {
-      "raw_name": "Koleda Belobog S-Rank",
+      "raw_name": "Koleda Belobog",
       "normalized_name": null,
       "slug": "koleda-belobog",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/koleda-belobog-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/koleda-belobog-teams"
     },
     {
-      "raw_name": "Komano Manato A-Rank",
+      "raw_name": "Komano Manato",
       "normalized_name": null,
       "slug": "komano-manato",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/komano-manato-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/komano-manato-teams"
     },
     {
-      "raw_name": "Lighter S-Rank",
-      "normalized_name": null,
+      "raw_name": "Lighter",
+      "normalized_name": "莱特",
       "slug": "lighter",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/lighter-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/lighter-teams"
     },
     {
-      "raw_name": "Lucia S-Rank",
+      "raw_name": "Lucia",
       "normalized_name": null,
       "slug": "lucia",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/lucia-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams"
     },
     {
-      "raw_name": "Lucy A-Rank",
+      "raw_name": "Lucy",
       "normalized_name": null,
       "slug": "lucy",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/lucy-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/lucy-teams"
     },
     {
-      "raw_name": "Nangong Yu S-Rank",
-      "normalized_name": null,
+      "raw_name": "Nangong Yu",
+      "normalized_name": "南宫羽",
       "slug": "nangong-yu",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/nangong-yu-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/nangong-yu-teams"
     },
     {
-      "raw_name": "Nekomata S-Rank",
+      "raw_name": "Nekomata",
       "normalized_name": null,
       "slug": "nekomata",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/nekomata-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/nekomata-teams"
     },
     {
-      "raw_name": "Nicole Demara A-Rank",
+      "raw_name": "Nicole Demara",
       "normalized_name": null,
       "slug": "nicole-demara",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/nicole-demara-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/nicole-demara-teams"
     },
     {
-      "raw_name": "Norma S-Rank",
+      "raw_name": "Norma",
       "normalized_name": null,
       "slug": "norma",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/norma-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams"
     },
     {
-      "raw_name": "Orphie & Magus S-Rank",
+      "raw_name": "Orphie & Magus",
       "normalized_name": null,
       "slug": "orphie-and-magus",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/orphie-and-magus-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/orphie-and-magus-teams"
     },
     {
-      "raw_name": "Pan Yinhu S-Rank",
+      "raw_name": "Pan Yinhu",
       "normalized_name": null,
       "slug": "pan-yinhu",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams"
     },
     {
-      "raw_name": "Phoenix S-Rank",
+      "raw_name": "Phoenix",
       "normalized_name": null,
       "slug": "phoenix",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/phoenix-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/phoenix-teams"
     },
     {
-      "raw_name": "Piper Wheel A-Rank",
+      "raw_name": "Piper Wheel",
       "normalized_name": null,
       "slug": "piper-wheel",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/piper-wheel-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/piper-wheel-teams"
     },
     {
-      "raw_name": "Promeia S-Rank",
+      "raw_name": "Promeia",
       "normalized_name": null,
       "slug": "promeia",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/promeia-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/promeia-teams"
     },
     {
-      "raw_name": "Pulchra A-Rank",
+      "raw_name": "Pulchra",
       "normalized_name": null,
       "slug": "pulchra",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams"
     },
     {
-      "raw_name": "Pyrois S-Rank",
+      "raw_name": "Pyrois",
       "normalized_name": null,
       "slug": "pyrois",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/pyrois-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/pyrois-teams"
     },
     {
-      "raw_name": "Qingyi S-Rank",
+      "raw_name": "Qingyi",
       "normalized_name": null,
       "slug": "qingyi",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/qingyi-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/qingyi-teams"
     },
     {
-      "raw_name": "Remielle Dan S-Rank",
+      "raw_name": "Remielle Dan",
       "normalized_name": null,
       "slug": "remielle-dan",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/remielle-dan-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/remielle-dan-teams"
     },
     {
-      "raw_name": "Roxy S-Rank",
+      "raw_name": "Roxy",
       "normalized_name": null,
       "slug": "roxy",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/roxy-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/roxy-teams"
     },
     {
-      "raw_name": "Seed S-Rank",
+      "raw_name": "Seed",
       "normalized_name": null,
       "slug": "seed",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/seed-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/seed-teams"
     },
     {
-      "raw_name": "Seth Lowell A-Rank",
+      "raw_name": "Seth Lowell",
       "normalized_name": null,
       "slug": "seth-lowell",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/seth-lowell-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/seth-lowell-teams"
     },
     {
-      "raw_name": "Severian S-Rank",
+      "raw_name": "Severian",
       "normalized_name": null,
       "slug": "severian",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/severian-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/severian-teams"
     },
     {
-      "raw_name": "Sigrid S-Rank",
+      "raw_name": "Sigrid",
       "normalized_name": null,
       "slug": "sigrid",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/sigrid-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/sigrid-teams"
     },
     {
-      "raw_name": "Soldier 0 - Anby S-Rank",
+      "raw_name": "Soldier 0 - Anby",
       "normalized_name": null,
       "slug": "soldier-0-anby",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-0-anby-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-0-anby-teams"
     },
     {
-      "raw_name": "Soldier 11 S-Rank",
+      "raw_name": "Soldier 11",
       "normalized_name": null,
       "slug": "soldier-11",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-11-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-11-teams"
     },
     {
-      "raw_name": "Soukaku A-Rank",
-      "normalized_name": null,
+      "raw_name": "Soukaku",
+      "normalized_name": "苍角",
       "slug": "soukaku",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/soukaku-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/soukaku-teams"
     },
     {
-      "raw_name": "Starlight Billy S-Rank",
+      "raw_name": "Starlight Billy",
       "normalized_name": null,
       "slug": "starlight-billy",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams"
     },
     {
-      "raw_name": "Sunna S-Rank",
+      "raw_name": "Sunna",
       "normalized_name": null,
       "slug": "sunna",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/sunna-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/sunna-teams"
     },
     {
-      "raw_name": "Trigger S-Rank",
+      "raw_name": "Trigger",
       "normalized_name": null,
       "slug": "trigger",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/trigger-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/trigger-teams"
     },
     {
-      "raw_name": "Tsukishiro Yanagi S-Rank",
-      "normalized_name": null,
+      "raw_name": "Tsukishiro Yanagi",
+      "normalized_name": "月城柳",
       "slug": "tsukishiro-yanagi",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/tsukishiro-yanagi-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/tsukishiro-yanagi-teams"
     },
     {
-      "raw_name": "Ukinami Yuzuha S-Rank",
-      "normalized_name": null,
+      "raw_name": "Ukinami Yuzuha",
+      "normalized_name": "浮波柚叶",
       "slug": "ukinami-yuzuha",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/ukinami-yuzuha-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/ukinami-yuzuha-teams"
     },
     {
-      "raw_name": "Velina S-Rank",
+      "raw_name": "Velina",
       "normalized_name": null,
       "slug": "velina",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/velina-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/velina-teams"
     },
     {
-      "raw_name": "Vivian S-Rank",
-      "normalized_name": null,
+      "raw_name": "Vivian",
+      "normalized_name": "薇薇安·班希",
       "slug": "vivian",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/vivian-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/vivian-teams"
     },
     {
-      "raw_name": "Von Lycaon S-Rank",
-      "normalized_name": null,
+      "raw_name": "Von Lycaon",
+      "normalized_name": "冯·莱卡恩",
       "slug": "von-lycaon",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/von-lycaon-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/von-lycaon-teams"
     },
     {
-      "raw_name": "Ye Shunguang S-Rank",
+      "raw_name": "Ye Shunguang",
       "normalized_name": null,
       "slug": "ye-shunguang",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/ye-shunguang-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/ye-shunguang-teams"
     },
     {
-      "raw_name": "Yidhari S-Rank",
+      "raw_name": "Yidhari",
       "normalized_name": null,
       "slug": "yidhari",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/yidhari-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/yidhari-teams"
     },
     {
-      "raw_name": "Yixuan S-Rank",
+      "raw_name": "Yixuan",
       "normalized_name": null,
       "slug": "yixuan",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/yixuan-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/yixuan-teams"
     },
     {
-      "raw_name": "Zhao S-Rank",
+      "raw_name": "Zhao",
       "normalized_name": null,
       "slug": "zhao",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/zhao-profile-skills-mindscapes",
       "team_url": "https://www.icy-veins.com/zenless-zone-zero/zhao-teams"
     },
     {
-      "raw_name": "Zhu Yuan S-Rank",
+      "raw_name": "Zhu Yuan",
       "normalized_name": null,
       "slug": "zhu-yuan",
       "profile_url": "https://www.icy-veins.com/zenless-zone-zero/zhu-yuan-profile-skills-mindscapes",
