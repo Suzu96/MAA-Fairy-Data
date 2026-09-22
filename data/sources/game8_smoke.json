@@ -3,7 +3,7 @@
   "source": "game8",
   "url": "https://game8.jp/zenless/614253",
   "http_status": 200,
-  "fetched_at": "2026-09-22T09:01:20Z",
+  "fetched_at": "2026-09-22T09:05:22Z",
   "title": "【ゼンゼロ】パーティの最強おすすめ編成と組み方・8月最新版【ゼンレスゾーンゼロ】｜ゲームエイト",
   "page_updated": "2026.09.22 05:30",
   "matched_aliases": [
@@ -14,10 +14,15 @@
     {
       "raw": "南宮羽",
       "normalized": "南宫羽"
+    },
+    {
+      "raw": "柚葉",
+      "normalized": "浮波柚叶"
     }
   ],
   "normalized_characters": [
     "南宫羽",
-    "星见雅"
+    "星见雅",
+    "浮波柚叶"
   ]
 }
