@@ -35,12 +35,13 @@ def team_key(members):
     )
 
 
-def add_source(
+def ensure_team(
     database,
-    members,
-    source
+    members
 ):
-    key = team_key(members)
+    key = team_key(
+        members
+    )
 
     if key not in database:
         database[key] = {
@@ -56,17 +57,50 @@ def add_source(
             "notes": ""
         }
 
-    existing_sources = (
-        database[key]["sources"]
+    return database[key]
+
+
+def set_core(
+    team,
+    core
+):
+    if not core:
+        return
+
+    current = team.get(
+        "core"
     )
 
+    if current is None:
+        team["core"] = core
+        return
+
+    if current == core:
+        return
+
+    conflicts = team.setdefault(
+        "core_conflicts",
+        []
+    )
+
+    if core not in conflicts:
+        conflicts.append(
+            core
+        )
+
+
+def add_source(
+    team,
+    source
+):
     source_identity = (
         source.get("site"),
         source.get("url"),
         source.get("section")
     )
 
-    for existing in existing_sources:
+    for existing in team["sources"]:
+
         existing_identity = (
             existing.get("site"),
             existing.get("url"),
@@ -79,12 +113,14 @@ def add_source(
         ):
             return
 
-    existing_sources.append(
+    team["sources"].append(
         source
     )
 
 
-def load_game8(database):
+def load_game8(
+    database
+):
     source = json.loads(
         GAME8_FILE.read_text(
             encoding="utf-8"
@@ -121,9 +157,18 @@ def load_game8(database):
         ):
             continue
 
-        add_source(
+        team = ensure_team(
             database,
-            members,
+            members
+        )
+
+        set_core(
+            team,
+            item.get("core")
+        )
+
+        add_source(
+            team,
             {
                 "site": "Game8",
                 "url": source["url"],
@@ -135,14 +180,16 @@ def load_game8(database):
         )
 
 
-def load_icyveins(database):
+def load_icyveins(
+    database
+):
     source = json.loads(
         ICYVEINS_FILE.read_text(
             encoding="utf-8"
         )
     )
 
-    core = source.get(
+    page_core = source.get(
         "core"
     )
 
@@ -155,9 +202,11 @@ def load_icyveins(database):
             []
         )
 
-        fully_normalized = item.get(
-            "fully_normalized",
-            False
+        fully_normalized = (
+            item.get(
+                "fully_normalized",
+                False
+            )
         )
 
         if not fully_normalized:
@@ -172,9 +221,22 @@ def load_icyveins(database):
         ):
             continue
 
-        add_source(
+        team = ensure_team(
             database,
-            members,
+            members
+        )
+
+        if (
+            page_core
+            and page_core in members
+        ):
+            set_core(
+                team,
+                page_core
+            )
+
+        add_source(
+            team,
             {
                 "site": "Icy Veins",
                 "url": source["url"],
@@ -184,16 +246,6 @@ def load_icyveins(database):
                     source["fetched_at"]
             }
         )
-
-        key = team_key(
-            members
-        )
-
-        if (
-            core
-            and core in members
-        ):
-            database[key]["core"] = core
 
 
 def main():
@@ -210,6 +262,7 @@ def main():
     teams = []
 
     for team in database.values():
+
         team["source_count"] = len(
             team["sources"]
         )
@@ -221,12 +274,39 @@ def main():
     teams.sort(
         key=lambda item: (
             -item["source_count"],
+            item["core"] or "",
             item["id"]
         )
     )
 
+    core_detected_count = sum(
+        1
+        for team in teams
+        if team.get("core")
+    )
+
+    core_missing_count = sum(
+        1
+        for team in teams
+        if not team.get("core")
+    )
+
+    core_conflict_count = sum(
+        1
+        for team in teams
+        if team.get(
+            "core_conflicts"
+        )
+    )
+
+    multi_source_count = sum(
+        1
+        for team in teams
+        if team["source_count"] > 1
+    )
+
     data = {
-        "schema": 4,
+        "schema": 5,
 
         "generated_at": datetime.now(
             timezone.utc
@@ -237,6 +317,18 @@ def main():
 
         "team_count":
             len(teams),
+
+        "core_detected_count":
+            core_detected_count,
+
+        "core_missing_count":
+            core_missing_count,
+
+        "core_conflict_count":
+            core_conflict_count,
+
+        "multi_source_count":
+            multi_source_count,
 
         "teams":
             teams
@@ -252,30 +344,28 @@ def main():
     )
 
     print(
-        f"Generated "
-        f"{len(teams)} merged teams."
+        f"Teams: {len(teams)}"
     )
 
-    multi_source = [
-        team
-        for team in teams
-        if team["source_count"] > 1
-    ]
+    print(
+        f"Core detected: "
+        f"{core_detected_count}"
+    )
+
+    print(
+        f"Core missing: "
+        f"{core_missing_count}"
+    )
+
+    print(
+        f"Core conflicts: "
+        f"{core_conflict_count}"
+    )
 
     print(
         f"Multi-source teams: "
-        f"{len(multi_source)}"
+        f"{multi_source_count}"
     )
-
-    for team in multi_source:
-        print(
-            " + ".join(
-                team["members"]
-            ),
-            "=>",
-            team["source_count"],
-            "sources"
-        )
 
 
 if __name__ == "__main__":
