@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "database_version": 1,
+  "updated_at": "2026-09-22",
+  "game_version": "3.x",
+  "files": {
+    "teams": "data/teams.json",
+    "synergy": "data/synergy.json",
+    "characters": "data/characters.json",
+    "sources": "data/sources.json"
+  }
+}
