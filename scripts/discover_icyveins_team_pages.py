@@ -1,8 +1,8 @@
 import json
+import re
+import html
 from datetime import datetime, timezone
-from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 
@@ -20,88 +20,22 @@ OUTPUT = Path(
 )
 
 
-class LinkParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.links = []
-        self.current = None
-
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-
-        if tag == "a":
-            href = attrs.get("href")
-
-            if href:
-                self.current = {
-                    "href": href,
-                    "text": [],
-                    "alts": []
-                }
-
-        elif (
-            tag == "img"
-            and self.current is not None
-        ):
-            alt = attrs.get("alt")
-
-            if alt:
-                self.current[
-                    "alts"
-                ].append(
-                    alt.strip()
-                )
-
-    def handle_data(self, data):
-        if self.current is None:
-            return
-
-        value = data.strip()
-
-        if value:
-            self.current[
-                "text"
-            ].append(
-                value
-            )
-
-    def handle_endtag(self, tag):
-        if (
-            tag == "a"
-            and self.current is not None
-        ):
-            self.links.append(
-                self.current
-            )
-
-            self.current = None
-
-
-def clean_value(value):
-    return " ".join(
-        value.split()
-    ).strip()
-
-
-def choose_name(link):
-    visible = clean_value(
-        " ".join(
-            link["text"]
-        )
+def clean_text(value):
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
     )
 
-    if visible:
-        return visible
+    value = html.unescape(value)
 
-    for alt in link["alts"]:
-        alt = clean_value(
-            alt
-        )
+    value = re.sub(
+        r"\s+",
+        " ",
+        value
+    )
 
-        if alt:
-            return alt
-
-    return ""
+    return value.strip()
 
 
 def main():
@@ -137,64 +71,41 @@ def main():
             errors="replace"
         )
 
-    parser = LinkParser()
-    parser.feed(raw)
+    pattern = re.compile(
+        r'<a\b[^>]*href=["\']'
+        r'(?:https://www\.icy-veins\.com)?'
+        r'(/zenless-zone-zero/'
+        r'([a-z0-9-]+)'
+        r'-profile-skills-mindscapes)'
+        r'(?:[?#][^"\']*)?'
+        r'["\'][^>]*>'
+        r'(.*?)'
+        r'</a>',
+        flags=re.I | re.S
+    )
 
     pages = []
     seen = set()
 
-    for link in parser.links:
+    for match in pattern.finditer(raw):
 
-        href = link["href"]
+        profile_path = match.group(1)
+        slug = match.group(2)
 
-        if (
-            "-profile-skills-mindscapes"
-            not in href
-        ):
-            continue
-
-        full_url = urljoin(
-            INDEX_URL,
-            href
+        raw_name = clean_text(
+            match.group(3)
         )
-
-        marker = (
-            "/zenless-zone-zero/"
-        )
-
-        if marker not in full_url:
-            continue
-
-        slug_part = full_url.split(
-            marker,
-            1
-        )[1]
-
-        slug = slug_part.split(
-            "-profile-skills-mindscapes",
-            1
-        )[0]
-
-        if not slug:
-            continue
 
         if slug in seen:
             continue
 
-        seen.add(
-            slug
-        )
+        if not raw_name:
+            continue
 
-        raw_name = choose_name(
-            link
-        )
+        seen.add(slug)
 
         normalized_name = (
-            aliases.get(
-                raw_name
-            )
-            if raw_name
-            else None
+            aliases.get(raw_name)
         )
 
         pages.append(
@@ -209,7 +120,10 @@ def main():
                     slug,
 
                 "profile_url":
-                    full_url,
+                    (
+                        "https://www.icy-veins.com"
+                        + profile_path
+                    ),
 
                 "team_url":
                     (
@@ -230,25 +144,14 @@ def main():
         {
             item["raw_name"]
             for item in pages
-            if (
-                item["raw_name"]
-                and not item[
-                    "normalized_name"
-                ]
-            )
+            if not item[
+                "normalized_name"
+            ]
         }
     )
 
-    mapped_count = sum(
-        1
-        for item in pages
-        if item[
-            "normalized_name"
-        ]
-    )
-
     data = {
-        "schema": 4,
+        "schema": 2,
 
         "source":
             "icyveins",
@@ -271,9 +174,6 @@ def main():
 
         "page_count":
             len(pages),
-
-        "mapped_name_count":
-            mapped_count,
 
         "unmapped_name_count":
             len(unmapped),
