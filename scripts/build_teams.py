@@ -9,7 +9,7 @@ GAME8_FILE = Path(
 )
 
 ICYVEINS_FILE = Path(
-    "data/sources/icyveins_team_test.json"
+    "data/sources/icyveins_all_teams.json"
 )
 
 OUTPUT_FILE = Path(
@@ -142,40 +142,58 @@ def load_icyveins(database):
         )
     )
 
-    members = source.get(
-        "normalized_members",
+    core = source.get(
+        "core"
+    )
+
+    for item in source.get(
+        "teams",
         []
-    )
-
-    valid = source.get(
-        "valid_three_member_team",
-        False
-    )
-
-    if not valid:
-        return
-
-    if len(members) != 3:
-        return
-
-    if any(
-        member is None
-        for member in members
     ):
-        return
+        members = item.get(
+            "normalized_members",
+            []
+        )
 
-    add_source(
-        database,
-        members,
-        {
-            "site": "Icy Veins",
-            "url": source["url"],
-            "section":
-                source["section"],
-            "page_fetched_at":
-                source["fetched_at"]
-        }
-    )
+        fully_normalized = item.get(
+            "fully_normalized",
+            False
+        )
+
+        if not fully_normalized:
+            continue
+
+        if len(members) != 3:
+            continue
+
+        if any(
+            member is None
+            for member in members
+        ):
+            continue
+
+        add_source(
+            database,
+            members,
+            {
+                "site": "Icy Veins",
+                "url": source["url"],
+                "section":
+                    "Hoshimi Miyabi's Best Teams",
+                "page_fetched_at":
+                    source["fetched_at"]
+            }
+        )
+
+        key = team_key(
+            members
+        )
+
+        if (
+            core
+            and core in members
+        ):
+            database[key]["core"] = core
 
 
 def main():
@@ -208,7 +226,7 @@ def main():
     )
 
     data = {
-        "schema": 3,
+        "schema": 4,
 
         "generated_at": datetime.now(
             timezone.utc
