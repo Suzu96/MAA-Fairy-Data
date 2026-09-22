@@ -1,8 +1,8 @@
 {
-  "schema": 1,
+  "schema": 2,
   "source": "icyveins",
   "http_status": 200,
-  "fetched_at": "2026-09-22T14:52:26Z",
+  "fetched_at": "2026-09-22T14:56:35Z",
   "page_count": 0,
   "unmapped_name_count": 0,
   "unmapped_names": [],
