@@ -1,13 +1,21 @@
 {
-  "schema": 2,
-  "generated_at": "2026-09-22T14:40:48Z",
+  "schema": 3,
+  "generated_at": "2026-09-22T14:46:10Z",
   "relation_count": 9,
   "relations": [
     {
       "core": "星见雅",
       "partner": "浮波柚叶",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "紊乱",
+        "异常",
+        "攻击增益",
+        "暴击伤害",
+        "暴击率",
+        "落霜",
+        "支援"
+      ],
+      "reason_zh": "浮波柚叶的主要协同方向：紊乱、异常、攻击增益、暴击伤害、暴击率、落霜、支援。",
       "source_reason": "Yuzuha is the best generalist Anomaly Support in the game at this time, and builds a sizable amount of Physical Anomaly of her own, allowing for frequent Disorder triggers which help build additional Fallen Frost stacks. She also buffs a considerable amount of ATK% and DMG%, and since most Miyabis are built fully on Crit Rate and Crit DMG, there aren't that many diminishing returns to be worried about either.",
       "shared_group": null,
       "source_count": 1,
@@ -16,15 +24,22 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Ukinami Yuzuha",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "南宫羽",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "紊乱",
+        "极性紊乱",
+        "异常",
+        "失衡",
+        "落霜",
+        "支援"
+      ],
+      "reason_zh": "南宫羽的主要协同方向：紊乱、极性紊乱、异常、失衡、落霜、支援。",
       "source_reason": "is by far the best Stunner for any Anomaly user. She provides a tremendous amount of DPS support for Anomaly teams, and is also a very safe option due to stunning enemies quite fast. She causes the unique Polarity Disorder effect, which does not consume Anomaly effects, but still generates a Fallen Frost stack. This makes her a perfect option to pair with Miyabi.",
       "shared_group": null,
       "source_count": 1,
@@ -33,15 +48,21 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Nangong Yu",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "薇薇安·班希",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "异常积蓄",
+        "异常",
+        "落霜",
+        "后台输出",
+        "副C"
+      ],
+      "reason_zh": "薇薇安·班希的主要协同方向：异常积蓄、异常、落霜、后台输出、副C。",
       "source_reason": "is a great sub DPS for any Anomaly team, and synergizes well with Miyabi, especially when also running Yuzuha. She provides good Anomaly buildup from off-field, helping Miyabi build Fallen Frost stacks, and Vivian's own DPS is nothing to scoff at either - even next to a Void Hunter!",
       "shared_group": null,
       "source_count": 1,
@@ -50,15 +71,19 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Vivian",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "月城柳",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "紊乱",
+        "异常",
+        "落霜"
+      ],
+      "reason_zh": "月城柳的主要协同方向：紊乱、异常、落霜。",
       "source_reason": "Yanagi is another great sup-DPS, which can trigger Disorder with her EX Special, even when the Anomaly bars aren't filled yet. This allows for a much higher amount of Fallen Frost charges, fueling Miyabi's own DPS potential, even if Yanagi herself doesn't provide any meaningful bonuses. This is more than enough though, and even to this day we are seeing quite a few speed-kills utilizing this specific aspect of Yanagi's kit, allowing Miyabi to unleash her full DPS potential.",
       "shared_group": null,
       "source_count": 1,
@@ -67,15 +92,22 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Tsukishiro Yanagi",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "冯·莱卡恩",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "紊乱",
+        "异常",
+        "失衡",
+        "冰伤",
+        "落霜",
+        "终结技"
+      ],
+      "reason_zh": "冯·莱卡恩的主要协同方向：紊乱、异常、失衡、冰伤、落霜、终结技。",
       "source_reason": "Other Good Stunners Other great stun options include Von Lycaon and Lighter who are great sources of Stun with lower field time, while also making the enemy more vulnerable to Ice DMG . This makes them good options if you don't want to go all in on Anomaly Disorder triggers, but instead focus more on bursting during Stun windows. Dialyn can grant Miyabi a second Ultimate, which is an additional 3 Fallen Frost charges, while also increasing the stun multiplier and window.",
       "shared_group": "other_good_stunners",
       "source_count": 1,
@@ -84,15 +116,22 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Von Lycaon",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "莱特",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "紊乱",
+        "异常",
+        "失衡",
+        "冰伤",
+        "落霜",
+        "终结技"
+      ],
+      "reason_zh": "莱特的主要协同方向：紊乱、异常、失衡、冰伤、落霜、终结技。",
       "source_reason": "Other Good Stunners Other great stun options include Von Lycaon and Lighter who are great sources of Stun with lower field time, while also making the enemy more vulnerable to Ice DMG . This makes them good options if you don't want to go all in on Anomaly Disorder triggers, but instead focus more on bursting during Stun windows. Dialyn can grant Miyabi a second Ultimate, which is an additional 3 Fallen Frost charges, while also increasing the stun multiplier and window.",
       "shared_group": "other_good_stunners",
       "source_count": 1,
@@ -101,15 +140,22 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Lighter",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "琉音",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "紊乱",
+        "异常",
+        "失衡",
+        "冰伤",
+        "落霜",
+        "终结技"
+      ],
+      "reason_zh": "琉音的主要协同方向：紊乱、异常、失衡、冰伤、落霜、终结技。",
       "source_reason": "Other Good Stunners Other great stun options include Von Lycaon and Lighter who are great sources of Stun with lower field time, while also making the enemy more vulnerable to Ice DMG . This makes them good options if you don't want to go all in on Anomaly Disorder triggers, but instead focus more on bursting during Stun windows. Dialyn can grant Miyabi a second Ultimate, which is an additional 3 Fallen Frost charges, while also increasing the stun multiplier and window.",
       "shared_group": "other_good_stunners",
       "source_count": 1,
@@ -118,15 +164,22 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Dialyn",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "耀嘉音",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "异常",
+        "攻击增益",
+        "暴击伤害",
+        "快速支援",
+        "连携技",
+        "支援"
+      ],
+      "reason_zh": "耀嘉音的主要协同方向：异常、攻击增益、暴击伤害、快速支援、连携技、支援。",
       "source_reason": "provides good damage buffs by increasing ATK%, DMG%, and Crit DMG%, while also offering frequent quick assists and Chain attacks. If you're not running a full Anomaly team, she is one of the best Supports you can play alongside Miyabi.",
       "shared_group": null,
       "source_count": 1,
@@ -135,15 +188,20 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Astra Yao",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     },
     {
       "core": "星见雅",
       "partner": "苍角",
-      "tags": [],
-      "reason_zh": null,
+      "tags": [
+        "冰伤",
+        "抗性削减",
+        "攻击增益",
+        "支援"
+      ],
+      "reason_zh": "苍角的主要协同方向：冰伤、抗性削减、攻击增益、支援。",
       "source_reason": "is a great support for any Ice-based team composition, providing an increase to Ice DMG , RES Shred and even an ATK buff making her a powerful substitute compared to Astra Yao .",
       "shared_group": null,
       "source_count": 1,
@@ -152,7 +210,7 @@
           "site": "Icy Veins",
           "url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
           "raw_partner": "Soukaku",
-          "fetched_at": "2026-09-22T14:40:48Z"
+          "fetched_at": "2026-09-22T14:46:10Z"
         }
       ]
     }
