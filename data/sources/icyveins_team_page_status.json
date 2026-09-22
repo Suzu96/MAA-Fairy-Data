@@ -1,0 +1,506 @@
+{
+  "schema": 1,
+  "fetched_at": "2026-09-22T15:24:23Z",
+  "page_count": 62,
+  "ok_count": 62,
+  "failed_count": 0,
+  "failed_pages": [],
+  "pages": [
+    {
+      "character": "亚历山德丽娜·莎芭丝缇安",
+      "raw_name": "Alexandrina Sebastiane",
+      "slug": "alexandrina-sebastiane",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "character": "爱丽丝·泰姆菲尔德",
+      "raw_name": "Alice Thymefield",
+      "slug": "alice-thymefield",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-teams"
+    },
+    {
+      "character": "安比·德玛拉",
+      "raw_name": "Anby Demara",
+      "slug": "anby-demara",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/anby-demara-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/anby-demara-teams"
+    },
+    {
+      "character": "安东·伊万诺夫",
+      "raw_name": "Anton Ivanov",
+      "slug": "anton-ivanov",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-teams"
+    },
+    {
+      "character": "爱芮",
+      "raw_name": "Aria",
+      "slug": "aria",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "character": "浅羽悠真",
+      "raw_name": "Asaba Harumasa",
+      "slug": "asaba-harumasa",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-teams"
+    },
+    {
+      "character": "耀嘉音",
+      "raw_name": "Astra Yao",
+      "slug": "astra-yao",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-teams"
+    },
+    {
+      "character": "般岳",
+      "raw_name": "Banyue",
+      "slug": "banyue",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/banyue-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/banyue-teams"
+    },
+    {
+      "character": "本·比格",
+      "raw_name": "Ben Bigger",
+      "slug": "ben-bigger",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/ben-bigger-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/ben-bigger-teams"
+    },
+    {
+      "character": "比利·奇德",
+      "raw_name": "Billy Kid",
+      "slug": "billy-kid",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/billy-kid-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/billy-kid-teams"
+    },
+    {
+      "character": "柏妮思·怀特",
+      "raw_name": "Burnice White",
+      "slug": "burnice-white",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-teams"
+    },
+    {
+      "character": "凯撒·金",
+      "raw_name": "Caesar King",
+      "slug": "caesar-king",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-teams"
+    },
+    {
+      "character": "希希芙",
+      "raw_name": "Cissia",
+      "slug": "cissia",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/cissia-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/cissia-teams"
+    },
+    {
+      "character": "克拉蕾·弗林特",
+      "raw_name": "Claret",
+      "slug": "claret",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/claret-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/claret-teams"
+    },
+    {
+      "character": "可琳·威克斯",
+      "raw_name": "Corin Wickes",
+      "slug": "corin-wickes",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/corin-wickes-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/corin-wickes-teams"
+    },
+    {
+      "character": "琉音",
+      "raw_name": "Dialyn",
+      "slug": "dialyn",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/dialyn-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/dialyn-teams"
+    },
+    {
+      "character": "艾莲·乔",
+      "raw_name": "Ellen Joe",
+      "slug": "ellen-joe",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/ellen-joe-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/ellen-joe-teams"
+    },
+    {
+      "character": "伊芙琳·舒瓦利耶",
+      "raw_name": "Evelyn Chevalier",
+      "slug": "evelyn-chevalier",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/evelyn-chevalier-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/evelyn-chevalier-teams"
+    },
+    {
+      "character": "格莉丝·霍华德",
+      "raw_name": "Grace Howard",
+      "slug": "grace-howard",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/grace-howard-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/grace-howard-teams"
+    },
+    {
+      "character": "星见雅",
+      "raw_name": "Hoshimi Miyabi",
+      "slug": "hoshimi-miyabi",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/hoshimi-miyabi-teams"
+    },
+    {
+      "character": "雨果·维拉德",
+      "raw_name": "Hugo Vlad",
+      "slug": "hugo-vlad",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/hugo-vlad-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/hugo-vlad-teams"
+    },
+    {
+      "character": "简·杜",
+      "raw_name": "Jane Doe",
+      "slug": "jane-doe",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/jane-doe-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/jane-doe-teams"
+    },
+    {
+      "character": "橘福福",
+      "raw_name": "Ju Fufu",
+      "slug": "ju-fufu",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/ju-fufu-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/ju-fufu-teams"
+    },
+    {
+      "character": "珂蕾妲·贝洛伯格",
+      "raw_name": "Koleda Belobog",
+      "slug": "koleda-belobog",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/koleda-belobog-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/koleda-belobog-teams"
+    },
+    {
+      "character": "狛野真斗",
+      "raw_name": "Komano Manato",
+      "slug": "komano-manato",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/komano-manato-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/komano-manato-teams"
+    },
+    {
+      "character": "莱特",
+      "raw_name": "Lighter",
+      "slug": "lighter",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/lighter-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/lighter-teams"
+    },
+    {
+      "character": "卢西娅·艾洛温",
+      "raw_name": "Lucia",
+      "slug": "lucia",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams"
+    },
+    {
+      "character": "露西亚娜·德·蒙特夫",
+      "raw_name": "Lucy",
+      "slug": "lucy",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/lucy-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/lucy-teams"
+    },
+    {
+      "character": "南宫羽",
+      "raw_name": "Nangong Yu",
+      "slug": "nangong-yu",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/nangong-yu-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/nangong-yu-teams"
+    },
+    {
+      "character": "猫宫又奈",
+      "raw_name": "Nekomata",
+      "slug": "nekomata",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/nekomata-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/nekomata-teams"
+    },
+    {
+      "character": "妮可·德玛拉",
+      "raw_name": "Nicole Demara",
+      "slug": "nicole-demara",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/nicole-demara-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/nicole-demara-teams"
+    },
+    {
+      "character": "诺姆·霍洛维尔",
+      "raw_name": "Norma",
+      "slug": "norma",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams"
+    },
+    {
+      "character": "奥菲丝·马格努森&「鬼火」",
+      "raw_name": "Orphie & Magus",
+      "slug": "orphie-and-magus",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/orphie-and-magus-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/orphie-and-magus-teams"
+    },
+    {
+      "character": "潘引壶",
+      "raw_name": "Pan Yinhu",
+      "slug": "pan-yinhu",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams"
+    },
+    {
+      "character": "菲欧妮",
+      "raw_name": "Phoenix",
+      "slug": "phoenix",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/phoenix-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/phoenix-teams"
+    },
+    {
+      "character": "派派·韦尔",
+      "raw_name": "Piper Wheel",
+      "slug": "piper-wheel",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/piper-wheel-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/piper-wheel-teams"
+    },
+    {
+      "character": "普罗米娅",
+      "raw_name": "Promeia",
+      "slug": "promeia",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/promeia-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/promeia-teams"
+    },
+    {
+      "character": "波可娜·费雷尼",
+      "raw_name": "Pulchra",
+      "slug": "pulchra",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams"
+    },
+    {
+      "character": "佩洛伊斯",
+      "raw_name": "Pyrois",
+      "slug": "pyrois",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/pyrois-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/pyrois-teams"
+    },
+    {
+      "character": "青衣",
+      "raw_name": "Qingyi",
+      "slug": "qingyi",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/qingyi-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/qingyi-teams"
+    },
+    {
+      "character": "蕾米埃尔·丹",
+      "raw_name": "Remielle Dan",
+      "slug": "remielle-dan",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/remielle-dan-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/remielle-dan-teams"
+    },
+    {
+      "character": "洛克茜",
+      "raw_name": "Roxy",
+      "slug": "roxy",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/roxy-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/roxy-teams"
+    },
+    {
+      "character": "「席德」",
+      "raw_name": "Seed",
+      "slug": "seed",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/seed-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/seed-teams"
+    },
+    {
+      "character": "赛斯·洛威尔",
+      "raw_name": "Seth Lowell",
+      "slug": "seth-lowell",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/seth-lowell-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/seth-lowell-teams"
+    },
+    {
+      "character": "赛维里安·洛威尔",
+      "raw_name": "Severian",
+      "slug": "severian",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/severian-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/severian-teams"
+    },
+    {
+      "character": "希格莉德·德拉叙尔",
+      "raw_name": "Sigrid",
+      "slug": "sigrid",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/sigrid-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/sigrid-teams"
+    },
+    {
+      "character": "零号·安比",
+      "raw_name": "Soldier 0 - Anby",
+      "slug": "soldier-0-anby",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-0-anby-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-0-anby-teams"
+    },
+    {
+      "character": "「11号」",
+      "raw_name": "Soldier 11",
+      "slug": "soldier-11",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-11-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/soldier-11-teams"
+    },
+    {
+      "character": "苍角",
+      "raw_name": "Soukaku",
+      "slug": "soukaku",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/soukaku-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/soukaku-teams"
+    },
+    {
+      "character": "星徽·比利·奇德",
+      "raw_name": "Starlight Billy",
+      "slug": "starlight-billy",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams"
+    },
+    {
+      "character": "千夏",
+      "raw_name": "Sunna",
+      "slug": "sunna",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/sunna-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/sunna-teams"
+    },
+    {
+      "character": "「扳机」",
+      "raw_name": "Trigger",
+      "slug": "trigger",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/trigger-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/trigger-teams"
+    },
+    {
+      "character": "月城柳",
+      "raw_name": "Tsukishiro Yanagi",
+      "slug": "tsukishiro-yanagi",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/tsukishiro-yanagi-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/tsukishiro-yanagi-teams"
+    },
+    {
+      "character": "浮波柚叶",
+      "raw_name": "Ukinami Yuzuha",
+      "slug": "ukinami-yuzuha",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/ukinami-yuzuha-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/ukinami-yuzuha-teams"
+    },
+    {
+      "character": "维琳娜·艾嘉德",
+      "raw_name": "Velina",
+      "slug": "velina",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/velina-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/velina-teams"
+    },
+    {
+      "character": "薇薇安·班希",
+      "raw_name": "Vivian",
+      "slug": "vivian",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/vivian-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/vivian-teams"
+    },
+    {
+      "character": "冯·莱卡恩",
+      "raw_name": "Von Lycaon",
+      "slug": "von-lycaon",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/von-lycaon-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/von-lycaon-teams"
+    },
+    {
+      "character": "叶瞬光",
+      "raw_name": "Ye Shunguang",
+      "slug": "ye-shunguang",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/ye-shunguang-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/ye-shunguang-teams"
+    },
+    {
+      "character": "伊德海莉·墨菲",
+      "raw_name": "Yidhari",
+      "slug": "yidhari",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/yidhari-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/yidhari-teams"
+    },
+    {
+      "character": "仪玄",
+      "raw_name": "Yixuan",
+      "slug": "yixuan",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/yixuan-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/yixuan-teams"
+    },
+    {
+      "character": "照",
+      "raw_name": "Zhao",
+      "slug": "zhao",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/zhao-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/zhao-teams"
+    },
+    {
+      "character": "朱鸢",
+      "raw_name": "Zhu Yuan",
+      "slug": "zhu-yuan",
+      "team_url": "https://www.icy-veins.com/zenless-zone-zero/zhu-yuan-teams",
+      "status": 200,
+      "final_url": "https://www.icy-veins.com/zenless-zone-zero/zhu-yuan-teams"
+    }
+  ]
+}
