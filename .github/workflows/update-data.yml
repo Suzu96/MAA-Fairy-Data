@@ -3,6 +3,13 @@ name: Update Data
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "47 18 * * *"
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
