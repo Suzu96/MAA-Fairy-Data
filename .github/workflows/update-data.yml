@@ -73,11 +73,15 @@ jobs:
       - name: Validate release data
         run: python scripts/validate_release.py
 
+      - name: Update manifest
+        run: python scripts/update_manifest.py
+
       - name: Commit generated data
         run: |
           git config user.name "MAA-Fairy Bot"
           git config user.email "maa-fairy-bot@users.noreply.github.com"
 
+          git add manifest.json
           git add data/automation_test.json
           git add data/sources/game8_smoke.json
           git add data/sources/game8_team_test.json
