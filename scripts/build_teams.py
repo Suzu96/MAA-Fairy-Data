@@ -9,7 +9,7 @@ GAME8_FILE = Path(
 )
 
 ICYVEINS_FILE = Path(
-    "data/sources/icyveins_all_teams.json"
+    "data/sources/icyveins_all_character_teams.json"
 )
 
 OUTPUT_FILE = Path(
@@ -84,7 +84,7 @@ def add_source(
     team,
     source
 ):
-    source_identity = (
+    identity = (
         source.get("site"),
         source.get("url"),
         source.get("section"),
@@ -92,7 +92,6 @@ def add_source(
     )
 
     for existing in team["sources"]:
-
         existing_identity = (
             existing.get("site"),
             existing.get("url"),
@@ -102,10 +101,7 @@ def add_source(
             )
         )
 
-        if (
-            existing_identity
-            == source_identity
-        ):
+        if existing_identity == identity:
             return
 
     team["sources"].append(
@@ -113,9 +109,7 @@ def add_source(
     )
 
 
-def load_game8(
-    database
-):
+def load_game8(database):
     source = json.loads(
         GAME8_FILE.read_text(
             encoding="utf-8"
@@ -129,8 +123,7 @@ def load_game8(
 
     if unmapped:
         raise RuntimeError(
-            "Game8 still has unmapped "
-            "character names: "
+            "Game8 unmapped names: "
             + ", ".join(unmapped)
         )
 
@@ -169,30 +162,44 @@ def load_game8(
         add_source(
             team,
             {
-                "site": "Game8",
-                "url": source["url"],
+                "site":
+                    "Game8",
+
+                "url":
+                    source["url"],
+
                 "section":
-                    item["section"],
+                    item.get(
+                        "section"
+                    ),
+
                 "recommended_for":
                     core,
+
                 "page_fetched_at":
-                    source["fetched_at"]
+                    source.get(
+                        "fetched_at"
+                    )
             }
         )
 
 
-def load_icyveins(
-    database
-):
+def load_icyveins(database):
     source = json.loads(
         ICYVEINS_FILE.read_text(
             encoding="utf-8"
         )
     )
 
-    page_core = source.get(
-        "core"
+    failed_pages = source.get(
+        "failed_pages",
+        []
     )
+
+    if failed_pages:
+        raise RuntimeError(
+            "Icy Veins has failed pages."
+        )
 
     for item in source.get(
         "teams",
@@ -203,11 +210,13 @@ def load_icyveins(
             []
         )
 
-        fully_normalized = (
-            item.get(
-                "fully_normalized",
-                False
-            )
+        core = item.get(
+            "core"
+        )
+
+        fully_normalized = item.get(
+            "fully_normalized",
+            False
         )
 
         if not fully_normalized:
@@ -227,26 +236,32 @@ def load_icyveins(
             members
         )
 
-        if (
-            page_core
-            and page_core in members
-        ):
-            add_recommended_for(
-                team,
-                page_core
-            )
+        add_recommended_for(
+            team,
+            core
+        )
 
         add_source(
             team,
             {
-                "site": "Icy Veins",
-                "url": source["url"],
+                "site":
+                    "Icy Veins",
+
+                "url":
+                    item.get(
+                        "url"
+                    ),
+
                 "section":
-                    "Hoshimi Miyabi's Best Teams",
+                    "Best Teams",
+
                 "recommended_for":
-                    page_core,
+                    core,
+
                 "page_fetched_at":
-                    source["fetched_at"]
+                    source.get(
+                        "fetched_at"
+                    )
             }
         )
 
@@ -266,7 +281,18 @@ def main():
 
     for team in database.values():
 
+        team["recommended_for"].sort()
+
         team["source_count"] = len(
+            {
+                source["site"]
+                for source in team[
+                    "sources"
+                ]
+            }
+        )
+
+        team["source_entry_count"] = len(
             team["sources"]
         )
 
@@ -278,7 +304,9 @@ def main():
         key=lambda item: (
             -item["source_count"],
             -len(
-                item["recommended_for"]
+                item[
+                    "recommended_for"
+                ]
             ),
             item["id"]
         )
@@ -287,38 +315,52 @@ def main():
     recommended_detected = sum(
         1
         for team in teams
-        if team["recommended_for"]
+        if team[
+            "recommended_for"
+        ]
     )
 
     recommended_missing = sum(
         1
         for team in teams
-        if not team["recommended_for"]
+        if not team[
+            "recommended_for"
+        ]
     )
 
     multi_anchor_count = sum(
         1
         for team in teams
         if len(
-            team["recommended_for"]
+            team[
+                "recommended_for"
+            ]
         ) > 1
     )
 
     multi_source_count = sum(
         1
         for team in teams
-        if team["source_count"] > 1
+        if team[
+            "source_count"
+        ] > 1
     )
 
     data = {
-        "schema": 6,
+        "schema": 7,
 
-        "generated_at": datetime.now(
-            timezone.utc
-        )
-        .replace(microsecond=0)
-        .isoformat()
-        .replace("+00:00", "Z"),
+        "generated_at":
+            datetime.now(
+                timezone.utc
+            )
+            .replace(
+                microsecond=0
+            )
+            .isoformat()
+            .replace(
+                "+00:00",
+                "Z"
+            ),
 
         "team_count":
             len(teams),
@@ -353,23 +395,23 @@ def main():
     )
 
     print(
-        f"Recommended-for detected: "
-        f"{recommended_detected}"
+        "Recommended-for detected:",
+        recommended_detected
     )
 
     print(
-        f"Recommended-for missing: "
-        f"{recommended_missing}"
+        "Recommended-for missing:",
+        recommended_missing
     )
 
     print(
-        f"Multi-anchor teams: "
-        f"{multi_anchor_count}"
+        "Multi-anchor teams:",
+        multi_anchor_count
     )
 
     print(
-        f"Multi-source teams: "
-        f"{multi_source_count}"
+        "Multi-source teams:",
+        multi_source_count
     )
 
 
