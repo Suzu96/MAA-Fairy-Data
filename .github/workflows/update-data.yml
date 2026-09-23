@@ -88,6 +88,7 @@ jobs:
           git add data/sources/icyveins_all_character_teams.json
           git add data/sources/icyveins_warning_summary.json
           git add data/sources/icyveins_all_character_synergy.json
+          git add data/sources/icyveins_synergy_issue_summary.json
           git add data/teams.json
           git add data/synergy.json
 
