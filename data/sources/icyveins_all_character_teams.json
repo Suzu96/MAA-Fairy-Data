@@ -1,12 +1,12 @@
 {
   "schema": 2,
   "source": "icyveins",
-  "fetched_at": "2026-09-23T02:32:54Z",
+  "fetched_at": "2026-09-23T02:37:58Z",
   "page_count": 62,
   "parsed_page_count": 62,
   "failed_page_count": 0,
-  "team_count": 614,
-  "warning_count": 17,
+  "team_count": 628,
+  "warning_count": 0,
   "failed_pages": [],
   "pages": [
     {
@@ -212,7 +212,7 @@
       "raw_core": "Ju Fufu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/ju-fufu-teams",
       "http_status": 200,
-      "team_count": 18,
+      "team_count": 19,
       "warning_count": 0,
       "warnings": []
     },
@@ -248,23 +248,9 @@
       "raw_core": "Lucia",
       "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
       "http_status": 200,
-      "team_count": 13,
-      "warning_count": 1,
-      "warnings": [
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Pan Yinhu",
-            "Yixuan",
-            "Nicole Demara"
-          ],
-          "normalized_group": [
-            "潘引壶",
-            "仪玄",
-            "妮可·德玛拉"
-          ]
-        }
-      ]
+      "team_count": 14,
+      "warning_count": 0,
+      "warnings": []
     },
     {
       "core": "露西亚娜·德·蒙特夫",
@@ -307,7 +293,7 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "http_status": 200,
-      "team_count": 15,
+      "team_count": 16,
       "warning_count": 0,
       "warnings": []
     },
@@ -325,7 +311,7 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "http_status": 200,
-      "team_count": 16,
+      "team_count": 17,
       "warning_count": 0,
       "warnings": []
     },
@@ -361,7 +347,7 @@
       "raw_core": "Pulchra",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams",
       "http_status": 200,
-      "team_count": 13,
+      "team_count": 14,
       "warning_count": 0,
       "warnings": []
     },
@@ -469,218 +455,9 @@
       "raw_core": "Starlight Billy",
       "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
       "http_status": 200,
-      "team_count": 0,
-      "warning_count": 16,
-      "warnings": [
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Dialyn",
-            "Lucia",
-            "Ju Fufu"
-          ],
-          "normalized_group": [
-            "琉音",
-            "卢西娅·艾洛温",
-            "橘福福"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Lucia",
-            "Ju Fufu",
-            "Lucia"
-          ],
-          "normalized_group": [
-            "卢西娅·艾洛温",
-            "橘福福",
-            "卢西娅·艾洛温"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Ju Fufu",
-            "Lucia",
-            "Dialyn"
-          ],
-          "normalized_group": [
-            "橘福福",
-            "卢西娅·艾洛温",
-            "琉音"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Lucia",
-            "Dialyn",
-            "Pan Yinhu"
-          ],
-          "normalized_group": [
-            "卢西娅·艾洛温",
-            "琉音",
-            "潘引壶"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Dialyn",
-            "Pan Yinhu",
-            "Pan Yinhu"
-          ],
-          "normalized_group": [
-            "琉音",
-            "潘引壶",
-            "潘引壶"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Pan Yinhu",
-            "Pan Yinhu",
-            "Ju Fufu"
-          ],
-          "normalized_group": [
-            "潘引壶",
-            "潘引壶",
-            "橘福福"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Pan Yinhu",
-            "Ju Fufu",
-            "Pan Yinhu"
-          ],
-          "normalized_group": [
-            "潘引壶",
-            "橘福福",
-            "潘引壶"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Ju Fufu",
-            "Pan Yinhu",
-            "Pulchra"
-          ],
-          "normalized_group": [
-            "橘福福",
-            "潘引壶",
-            "波可娜·费雷尼"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Pan Yinhu",
-            "Pulchra",
-            "Trigger"
-          ],
-          "normalized_group": [
-            "潘引壶",
-            "波可娜·费雷尼",
-            "「扳机」"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Pulchra",
-            "Trigger",
-            "Lucia"
-          ],
-          "normalized_group": [
-            "波可娜·费雷尼",
-            "「扳机」",
-            "卢西娅·艾洛温"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Trigger",
-            "Lucia",
-            "Pulchra"
-          ],
-          "normalized_group": [
-            "「扳机」",
-            "卢西娅·艾洛温",
-            "波可娜·费雷尼"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Lucia",
-            "Pulchra",
-            "Lucia"
-          ],
-          "normalized_group": [
-            "卢西娅·艾洛温",
-            "波可娜·费雷尼",
-            "卢西娅·艾洛温"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Pulchra",
-            "Lucia",
-            "Lucia"
-          ],
-          "normalized_group": [
-            "波可娜·费雷尼",
-            "卢西娅·艾洛温",
-            "卢西娅·艾洛温"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Lucia",
-            "Lucia",
-            "Astra Yao"
-          ],
-          "normalized_group": [
-            "卢西娅·艾洛温",
-            "卢西娅·艾洛温",
-            "耀嘉音"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Lucia",
-            "Astra Yao",
-            "Dialyn"
-          ],
-          "normalized_group": [
-            "卢西娅·艾洛温",
-            "耀嘉音",
-            "琉音"
-          ]
-        },
-        {
-          "type": "unmatched_sequence",
-          "raw_group": [
-            "Astra Yao",
-            "Dialyn",
-            "Astra Yao"
-          ],
-          "normalized_group": [
-            "耀嘉音",
-            "琉音",
-            "耀嘉音"
-          ]
-        }
-      ]
+      "team_count": 9,
+      "warning_count": 0,
+      "warnings": []
     },
     {
       "core": "千夏",
@@ -4473,6 +4250,22 @@
       "fully_normalized": true
     },
     {
+      "core": "橘福福",
+      "raw_core": "Ju Fufu",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/ju-fufu-teams",
+      "raw_members": [
+        "Ju Fufu",
+        "Starlight - Billy",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "橘福福",
+        "星徽·比利·奇德",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
       "core": "珂蕾妲·贝洛伯格",
       "raw_core": "Koleda Belobog",
       "url": "https://www.icy-veins.com/zenless-zone-zero/koleda-belobog-teams",
@@ -4909,142 +4702,158 @@
       "raw_core": "Lucia",
       "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
       "raw_members": [
+        "Starlight - Billy",
         "Dialyn",
-        "Lucia",
-        "Nicole Demara"
-      ],
-      "normalized_members": [
-        "琉音",
-        "卢西娅·艾洛温",
-        "妮可·德玛拉"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Banyue",
-        "Dialyn"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "般岳",
-        "琉音"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Banyue",
-        "Lighter"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "般岳",
-        "莱特"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Banyue",
-        "Koleda Belobog"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "般岳",
-        "珂蕾妲·贝洛伯格"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Yidhari",
-        "Soukaku"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "伊德海莉·墨菲",
-        "苍角"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Yidhari",
-        "Von Lycaon"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "伊德海莉·墨菲",
-        "冯·莱卡恩"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Yidhari",
-        "Pulchra"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "伊德海莉·墨菲",
-        "波可娜·费雷尼"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Yixuan",
-        "Ju Fufu"
-      ],
-      "normalized_members": [
-        "卢西娅·艾洛温",
-        "仪玄",
-        "橘福福"
-      ],
-      "fully_normalized": true
-    },
-    {
-      "core": "卢西娅·艾洛温",
-      "raw_core": "Lucia",
-      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
-      "raw_members": [
-        "Lucia",
-        "Yixuan",
         "Lucia"
       ],
       "normalized_members": [
-        "卢西娅·艾洛温",
-        "仪玄",
+        "星徽·比利·奇德",
+        "琉音",
         "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Starlight - Billy",
+        "Nicole Demara",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "妮可·德玛拉",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Banyue",
+        "Dialyn",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "般岳",
+        "琉音",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Banyue",
+        "Lighter",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "般岳",
+        "莱特",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Banyue",
+        "Koleda Belobog",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "般岳",
+        "珂蕾妲·贝洛伯格",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Yidhari",
+        "Soukaku",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "伊德海莉·墨菲",
+        "苍角",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Yidhari",
+        "Von Lycaon",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "伊德海莉·墨菲",
+        "冯·莱卡恩",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Yidhari",
+        "Pulchra",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "伊德海莉·墨菲",
+        "波可娜·费雷尼",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Yixuan",
+        "Ju Fufu",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "仪玄",
+        "橘福福",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "raw_core": "Lucia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/lucia-teams",
+      "raw_members": [
+        "Yixuan",
+        "Lucia",
+        "Pan Yinhu"
+      ],
+      "normalized_members": [
+        "仪玄",
+        "卢西娅·艾洛温",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -5726,13 +5535,13 @@
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
         "Norma",
-        "Lucia",
-        "Norma"
+        "Starlight - Billy Kid",
+        "Lucia"
       ],
       "normalized_members": [
         "诺姆·霍洛维尔",
-        "卢西娅·艾洛温",
-        "诺姆·霍洛维尔"
+        "星徽·比利·奇德",
+        "卢西娅·艾洛温"
       ],
       "fully_normalized": true
     },
@@ -5741,14 +5550,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Yixuan",
-        "Lucia",
-        "Norma"
+        "Lucia"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "仪玄",
-        "卢西娅·艾洛温",
-        "诺姆·霍洛维尔"
+        "卢西娅·艾洛温"
       ],
       "fully_normalized": true
     },
@@ -5757,14 +5566,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Yidhari",
-        "Lucia",
-        "Norma"
+        "Lucia"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "伊德海莉·墨菲",
-        "卢西娅·艾洛温",
-        "诺姆·霍洛维尔"
+        "卢西娅·艾洛温"
       ],
       "fully_normalized": true
     },
@@ -5773,14 +5582,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Yixuan",
-        "Pan Yinhu",
-        "Norma"
+        "Pan Yinhu"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "仪玄",
-        "潘引壶",
-        "诺姆·霍洛维尔"
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -5789,14 +5598,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Komano Manato",
-        "Lucia",
-        "Norma"
+        "Lucia"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "狛野真斗",
-        "卢西娅·艾洛温",
-        "诺姆·霍洛维尔"
+        "卢西娅·艾洛温"
       ],
       "fully_normalized": true
     },
@@ -5805,14 +5614,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Banyue",
-        "Lucia",
-        "Norma"
+        "Lucia"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "般岳",
-        "卢西娅·艾洛温",
-        "诺姆·霍洛维尔"
+        "卢西娅·艾洛温"
       ],
       "fully_normalized": true
     },
@@ -5821,14 +5630,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Pyrois",
-        "Sunna",
-        "Norma"
+        "Sunna"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "佩洛伊斯",
-        "千夏",
-        "诺姆·霍洛维尔"
+        "千夏"
       ],
       "fully_normalized": true
     },
@@ -5837,14 +5646,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Ye Shunguang",
-        "Astra Yao",
-        "Norma"
+        "Astra Yao"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "叶瞬光",
-        "耀嘉音",
-        "诺姆·霍洛维尔"
+        "耀嘉音"
       ],
       "fully_normalized": true
     },
@@ -5853,14 +5662,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Ye Shunguang",
-        "Sunna",
-        "Norma"
+        "Sunna"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "叶瞬光",
-        "千夏",
-        "诺姆·霍洛维尔"
+        "千夏"
       ],
       "fully_normalized": true
     },
@@ -5869,14 +5678,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Ye Shunguang",
-        "Zhao",
-        "Norma"
+        "Zhao"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "叶瞬光",
-        "照",
-        "诺姆·霍洛维尔"
+        "照"
       ],
       "fully_normalized": true
     },
@@ -5885,14 +5694,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Evelyn Chevalier",
-        "Astra Yao",
-        "Norma"
+        "Astra Yao"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "伊芙琳·舒瓦利耶",
-        "耀嘉音",
-        "诺姆·霍洛维尔"
+        "耀嘉音"
       ],
       "fully_normalized": true
     },
@@ -5901,14 +5710,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Soldier 11",
-        "Astra Yao",
-        "Norma"
+        "Astra Yao"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "「11号」",
-        "耀嘉音",
-        "诺姆·霍洛维尔"
+        "耀嘉音"
       ],
       "fully_normalized": true
     },
@@ -5917,14 +5726,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Soldier 11",
-        "Sunna",
-        "Norma"
+        "Sunna"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "「11号」",
-        "千夏",
-        "诺姆·霍洛维尔"
+        "千夏"
       ],
       "fully_normalized": true
     },
@@ -5933,14 +5742,14 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Soldier 0 - Anby",
-        "Orphie & Magus",
-        "Norma"
+        "Orphie & Magus"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "零号·安比",
-        "奥菲丝·马格努森&「鬼火」",
-        "诺姆·霍洛维尔"
+        "奥菲丝·马格努森&「鬼火」"
       ],
       "fully_normalized": true
     },
@@ -5949,14 +5758,30 @@
       "raw_core": "Norma",
       "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
       "raw_members": [
+        "Norma",
         "Seed",
-        "Cissia",
-        "Norma"
+        "Cissia"
       ],
       "normalized_members": [
+        "诺姆·霍洛维尔",
         "「席德」",
+        "希希芙"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "诺姆·霍洛维尔",
+      "raw_core": "Norma",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/norma-teams",
+      "raw_members": [
+        "Norma",
+        "Cissia",
+        "Sunna"
+      ],
+      "normalized_members": [
+        "诺姆·霍洛维尔",
         "希希芙",
-        "诺姆·霍洛维尔"
+        "千夏"
       ],
       "fully_normalized": true
     },
@@ -6173,14 +5998,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
+        "Starlight - Billy",
         "Dialyn",
-        "Pan Yinhu",
-        "Lucia"
+        "Pan Yinhu"
       ],
       "normalized_members": [
+        "星徽·比利·奇德",
         "琉音",
-        "潘引壶",
-        "卢西娅·艾洛温"
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6189,14 +6014,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
-        "Banyue",
-        "Lucia"
+        "Starlight - Billy",
+        "Lucia",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
-        "般岳",
-        "卢西娅·艾洛温"
+        "星徽·比利·奇德",
+        "卢西娅·艾洛温",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6205,14 +6030,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Banyue",
-        "Lighter"
+        "Lucia",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "般岳",
-        "莱特"
+        "卢西娅·艾洛温",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6221,14 +6046,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Banyue",
-        "Dialyn"
+        "Lighter",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "般岳",
-        "琉音"
+        "莱特",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6237,14 +6062,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Banyue",
-        "Norma"
+        "Dialyn",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "般岳",
-        "诺姆·霍洛维尔"
+        "琉音",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6253,14 +6078,30 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
+        "Banyue",
+        "Norma",
+        "Pan Yinhu"
+      ],
+      "normalized_members": [
+        "般岳",
+        "诺姆·霍洛维尔",
+        "潘引壶"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "潘引壶",
+      "raw_core": "Pan Yinhu",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
+      "raw_members": [
         "Yidhari",
-        "Soukaku"
+        "Soukaku",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "伊德海莉·墨菲",
-        "苍角"
+        "苍角",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6269,14 +6110,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Yidhari",
-        "Von Lycaon"
+        "Von Lycaon",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "伊德海莉·墨菲",
-        "冯·莱卡恩"
+        "冯·莱卡恩",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6285,14 +6126,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Yidhari",
-        "Pulchra"
+        "Pulchra",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "伊德海莉·墨菲",
-        "波可娜·费雷尼"
+        "波可娜·费雷尼",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6301,14 +6142,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Yixuan",
-        "Astra Yao"
+        "Astra Yao",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "仪玄",
-        "耀嘉音"
+        "耀嘉音",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6317,14 +6158,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Yixuan",
-        "Ju Fufu"
+        "Ju Fufu",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "仪玄",
-        "橘福福"
+        "橘福福",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6333,14 +6174,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Yixuan",
-        "Norma"
+        "Norma",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "仪玄",
-        "诺姆·霍洛维尔"
+        "诺姆·霍洛维尔",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6349,14 +6190,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Yixuan",
-        "Koleda Belobog"
+        "Koleda Belobog",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "仪玄",
-        "珂蕾妲·贝洛伯格"
+        "珂蕾妲·贝洛伯格",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6365,14 +6206,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Komano Manato",
-        "Lucia"
+        "Lucia",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "狛野真斗",
-        "卢西娅·艾洛温"
+        "卢西娅·艾洛温",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6381,14 +6222,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Komano Manato",
-        "Ju Fufu"
+        "Ju Fufu",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "狛野真斗",
-        "橘福福"
+        "橘福福",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6397,14 +6238,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Komano Manato",
-        "Lighter"
+        "Lighter",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "狛野真斗",
-        "莱特"
+        "莱特",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6413,14 +6254,14 @@
       "raw_core": "Pan Yinhu",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pan-yinhu-teams",
       "raw_members": [
-        "Pan Yinhu",
         "Komano Manato",
-        "Norma"
+        "Norma",
+        "Pan Yinhu"
       ],
       "normalized_members": [
-        "潘引壶",
         "狛野真斗",
-        "诺姆·霍洛维尔"
+        "诺姆·霍洛维尔",
+        "潘引壶"
       ],
       "fully_normalized": true
     },
@@ -6958,13 +6799,13 @@
       "url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams",
       "raw_members": [
         "Pulchra",
-        "Lucia",
-        "Pulchra"
+        "Starlight - Billy",
+        "Lucia"
       ],
       "normalized_members": [
         "波可娜·费雷尼",
-        "卢西娅·艾洛温",
-        "波可娜·费雷尼"
+        "星徽·比利·奇德",
+        "卢西娅·艾洛温"
       ],
       "fully_normalized": true
     },
@@ -6973,14 +6814,30 @@
       "raw_core": "Pulchra",
       "url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams",
       "raw_members": [
+        "Pulchra",
         "Banyue",
-        "Lucia",
-        "Pulchra"
+        "Lucia"
       ],
       "normalized_members": [
+        "波可娜·费雷尼",
         "般岳",
-        "卢西娅·艾洛温",
-        "波可娜·费雷尼"
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "波可娜·费雷尼",
+      "raw_core": "Pulchra",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/pulchra-teams",
+      "raw_members": [
+        "Pulchra",
+        "Yidhari",
+        "Zhao"
+      ],
+      "normalized_members": [
+        "波可娜·费雷尼",
+        "伊德海莉·墨菲",
+        "照"
       ],
       "fully_normalized": true
     },
@@ -8613,6 +8470,150 @@
         "星见雅",
         "月城柳",
         "苍角"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Dialyn",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "琉音",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Ju Fufu",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "橘福福",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Dialyn",
+        "Pan Yinhu"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "琉音",
+        "潘引壶"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Pan Yinhu",
+        "Ju Fufu"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "潘引壶",
+        "橘福福"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Pan Yinhu",
+        "Pulchra"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "潘引壶",
+        "波可娜·费雷尼"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Trigger",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "「扳机」",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Pulchra",
+        "Lucia"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "波可娜·费雷尼",
+        "卢西娅·艾洛温"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Lucia",
+        "Astra Yao"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "卢西娅·艾洛温",
+        "耀嘉音"
+      ],
+      "fully_normalized": true
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "raw_core": "Starlight Billy",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/starlight-billy-teams",
+      "raw_members": [
+        "Starlight - Billy Kid",
+        "Dialyn",
+        "Astra Yao"
+      ],
+      "normalized_members": [
+        "星徽·比利·奇德",
+        "琉音",
+        "耀嘉音"
       ],
       "fully_normalized": true
     },
