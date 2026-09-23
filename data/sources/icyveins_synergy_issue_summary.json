@@ -1,0 +1,539 @@
+{
+  "relation_count": 501,
+  "empty_reason_count": 202,
+  "affected_core_count": 58,
+  "affected_cores": [
+    {
+      "core": "爱芮",
+      "empty_count": 7,
+      "total_count": 13
+    },
+    {
+      "core": "诺姆·霍洛维尔",
+      "empty_count": 7,
+      "total_count": 11
+    },
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "empty_count": 6,
+      "total_count": 10
+    },
+    {
+      "core": "卢西娅·艾洛温",
+      "empty_count": 6,
+      "total_count": 12
+    },
+    {
+      "core": "潘引壶",
+      "empty_count": 6,
+      "total_count": 12
+    },
+    {
+      "core": "「席德」",
+      "empty_count": 6,
+      "total_count": 9
+    },
+    {
+      "core": "伊芙琳·舒瓦利耶",
+      "empty_count": 5,
+      "total_count": 9
+    },
+    {
+      "core": "格莉丝·霍华德",
+      "empty_count": 5,
+      "total_count": 14
+    },
+    {
+      "core": "橘福福",
+      "empty_count": 5,
+      "total_count": 9
+    },
+    {
+      "core": "菲欧妮",
+      "empty_count": 5,
+      "total_count": 10
+    },
+    {
+      "core": "普罗米娅",
+      "empty_count": 5,
+      "total_count": 13
+    },
+    {
+      "core": "佩洛伊斯",
+      "empty_count": 5,
+      "total_count": 12
+    },
+    {
+      "core": "蕾米埃尔·丹",
+      "empty_count": 5,
+      "total_count": 13
+    },
+    {
+      "core": "赛维里安·洛威尔",
+      "empty_count": 5,
+      "total_count": 11
+    },
+    {
+      "core": "零号·安比",
+      "empty_count": 5,
+      "total_count": 9
+    },
+    {
+      "core": "「扳机」",
+      "empty_count": 5,
+      "total_count": 8
+    },
+    {
+      "core": "可琳·威克斯",
+      "empty_count": 4,
+      "total_count": 7
+    },
+    {
+      "core": "雨果·维拉德",
+      "empty_count": 4,
+      "total_count": 8
+    },
+    {
+      "core": "莱特",
+      "empty_count": 4,
+      "total_count": 7
+    },
+    {
+      "core": "千夏",
+      "empty_count": 4,
+      "total_count": 11
+    },
+    {
+      "core": "月城柳",
+      "empty_count": 4,
+      "total_count": 8
+    },
+    {
+      "core": "叶瞬光",
+      "empty_count": 4,
+      "total_count": 11
+    },
+    {
+      "core": "伊德海莉·墨菲",
+      "empty_count": 4,
+      "total_count": 12
+    },
+    {
+      "core": "仪玄",
+      "empty_count": 4,
+      "total_count": 10
+    },
+    {
+      "core": "爱丽丝·泰姆菲尔德",
+      "empty_count": 3,
+      "total_count": 7
+    },
+    {
+      "core": "安东·伊万诺夫",
+      "empty_count": 3,
+      "total_count": 8
+    },
+    {
+      "core": "浅羽悠真",
+      "empty_count": 3,
+      "total_count": 7
+    },
+    {
+      "core": "耀嘉音",
+      "empty_count": 3,
+      "total_count": 8
+    },
+    {
+      "core": "般岳",
+      "empty_count": 3,
+      "total_count": 7
+    },
+    {
+      "core": "柏妮思·怀特",
+      "empty_count": 3,
+      "total_count": 10
+    },
+    {
+      "core": "凯撒·金",
+      "empty_count": 3,
+      "total_count": 8
+    },
+    {
+      "core": "珂蕾妲·贝洛伯格",
+      "empty_count": 3,
+      "total_count": 9
+    },
+    {
+      "core": "狛野真斗",
+      "empty_count": 3,
+      "total_count": 7
+    },
+    {
+      "core": "露西亚娜·德·蒙特夫",
+      "empty_count": 3,
+      "total_count": 11
+    },
+    {
+      "core": "奥菲丝·马格努森&「鬼火」",
+      "empty_count": 3,
+      "total_count": 6
+    },
+    {
+      "core": "波可娜·费雷尼",
+      "empty_count": 3,
+      "total_count": 6
+    },
+    {
+      "core": "洛克茜",
+      "empty_count": 3,
+      "total_count": 6
+    },
+    {
+      "core": "赛斯·洛威尔",
+      "empty_count": 3,
+      "total_count": 6
+    },
+    {
+      "core": "浮波柚叶",
+      "empty_count": 3,
+      "total_count": 6
+    },
+    {
+      "core": "维琳娜·艾嘉德",
+      "empty_count": 3,
+      "total_count": 13
+    },
+    {
+      "core": "冯·莱卡恩",
+      "empty_count": 3,
+      "total_count": 5
+    },
+    {
+      "core": "朱鸢",
+      "empty_count": 3,
+      "total_count": 7
+    },
+    {
+      "core": "安比·德玛拉",
+      "empty_count": 2,
+      "total_count": 4
+    },
+    {
+      "core": "本·比格",
+      "empty_count": 2,
+      "total_count": 4
+    },
+    {
+      "core": "比利·奇德",
+      "empty_count": 2,
+      "total_count": 6
+    },
+    {
+      "core": "希希芙",
+      "empty_count": 2,
+      "total_count": 9
+    },
+    {
+      "core": "星见雅",
+      "empty_count": 2,
+      "total_count": 9
+    },
+    {
+      "core": "南宫羽",
+      "empty_count": 2,
+      "total_count": 9
+    },
+    {
+      "core": "猫宫又奈",
+      "empty_count": 2,
+      "total_count": 8
+    },
+    {
+      "core": "青衣",
+      "empty_count": 2,
+      "total_count": 4
+    },
+    {
+      "core": "「11号」",
+      "empty_count": 2,
+      "total_count": 9
+    },
+    {
+      "core": "星徽·比利·奇德",
+      "empty_count": 2,
+      "total_count": 6
+    },
+    {
+      "core": "薇薇安·班希",
+      "empty_count": 2,
+      "total_count": 8
+    },
+    {
+      "core": "照",
+      "empty_count": 2,
+      "total_count": 6
+    },
+    {
+      "core": "艾莲·乔",
+      "empty_count": 1,
+      "total_count": 7
+    },
+    {
+      "core": "简·杜",
+      "empty_count": 1,
+      "total_count": 7
+    },
+    {
+      "core": "派派·韦尔",
+      "empty_count": 1,
+      "total_count": 5
+    },
+    {
+      "core": "希格莉德·德拉叙尔",
+      "empty_count": 1,
+      "total_count": 4
+    }
+  ],
+  "samples": [
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "partner": "希希芙",
+      "raw_partner": "Cissia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "partner": "「席德」",
+      "raw_partner": "Seed",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "partner": "浅羽悠真",
+      "raw_partner": "Asaba Harumasa",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "partner": "青衣",
+      "raw_partner": "Qingyi",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "partner": "「扳机」",
+      "raw_partner": "Trigger",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "core": "亚历山德丽娜·莎芭丝缇安",
+      "partner": "艾莲·乔",
+      "raw_partner": "Ellen Joe",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alexandrina-sebastiane-teams"
+    },
+    {
+      "core": "爱丽丝·泰姆菲尔德",
+      "partner": "月城柳",
+      "raw_partner": "Tsukishiro Yanagi",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-teams"
+    },
+    {
+      "core": "爱丽丝·泰姆菲尔德",
+      "partner": "简·杜",
+      "raw_partner": "Jane Doe",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-teams"
+    },
+    {
+      "core": "爱丽丝·泰姆菲尔德",
+      "partner": "柏妮思·怀特",
+      "raw_partner": "Burnice White",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/alice-thymefield-teams"
+    },
+    {
+      "core": "安比·德玛拉",
+      "partner": "希希芙",
+      "raw_partner": "Cissia",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/anby-demara-teams"
+    },
+    {
+      "core": "安比·德玛拉",
+      "partner": "「席德」",
+      "raw_partner": "Seed",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/anby-demara-teams"
+    },
+    {
+      "core": "安东·伊万诺夫",
+      "partner": "「扳机」",
+      "raw_partner": "Trigger",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-teams"
+    },
+    {
+      "core": "安东·伊万诺夫",
+      "partner": "格莉丝·霍华德",
+      "raw_partner": "Grace Howard",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-teams"
+    },
+    {
+      "core": "安东·伊万诺夫",
+      "partner": "亚历山德丽娜·莎芭丝缇安",
+      "raw_partner": "Alexandrina Sebastiane",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/anton-ivanov-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "千夏",
+      "raw_partner": "Sunna",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "蕾米埃尔·丹",
+      "raw_partner": "Remielle Dan",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "维琳娜·艾嘉德",
+      "raw_partner": "Velina",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "浮波柚叶",
+      "raw_partner": "Ukinami Yuzuha",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "妮可·德玛拉",
+      "raw_partner": "Nicole Demara",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "琉音",
+      "raw_partner": "Dialyn",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "爱芮",
+      "partner": "「扳机」",
+      "raw_partner": "Trigger",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/aria-teams"
+    },
+    {
+      "core": "浅羽悠真",
+      "partner": "「扳机」",
+      "raw_partner": "Trigger",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-teams"
+    },
+    {
+      "core": "浅羽悠真",
+      "partner": "青衣",
+      "raw_partner": "Qingyi",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-teams"
+    },
+    {
+      "core": "浅羽悠真",
+      "partner": "「席德」",
+      "raw_partner": "Seed",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/asaba-harumasa-teams"
+    },
+    {
+      "core": "耀嘉音",
+      "partner": "星见雅",
+      "raw_partner": "Hoshimi Miyabi",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-teams"
+    },
+    {
+      "core": "耀嘉音",
+      "partner": "零号·安比",
+      "raw_partner": "Soldier 0 - Anby",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-teams"
+    },
+    {
+      "core": "耀嘉音",
+      "partner": "「席德」",
+      "raw_partner": "Seed",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/astra-yao-teams"
+    },
+    {
+      "core": "般岳",
+      "partner": "橘福福",
+      "raw_partner": "Ju Fufu",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/banyue-teams"
+    },
+    {
+      "core": "般岳",
+      "partner": "潘引壶",
+      "raw_partner": "Pan Yinhu",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/banyue-teams"
+    },
+    {
+      "core": "般岳",
+      "partner": "耀嘉音",
+      "raw_partner": "Astra Yao",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/banyue-teams"
+    },
+    {
+      "core": "本·比格",
+      "partner": "奥菲丝·马格努森&「鬼火」",
+      "raw_partner": "Orphie & Magus",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/ben-bigger-teams"
+    },
+    {
+      "core": "本·比格",
+      "partner": "伊芙琳·舒瓦利耶",
+      "raw_partner": "Evelyn Chevalier",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/ben-bigger-teams"
+    },
+    {
+      "core": "比利·奇德",
+      "partner": "波可娜·费雷尼",
+      "raw_partner": "Pulchra",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/billy-kid-teams"
+    },
+    {
+      "core": "比利·奇德",
+      "partner": "妮可·德玛拉",
+      "raw_partner": "Nicole Demara",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/billy-kid-teams"
+    },
+    {
+      "core": "柏妮思·怀特",
+      "partner": "简·杜",
+      "raw_partner": "Jane Doe",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-teams"
+    },
+    {
+      "core": "柏妮思·怀特",
+      "partner": "爱丽丝·泰姆菲尔德",
+      "raw_partner": "Alice Thymefield",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-teams"
+    },
+    {
+      "core": "柏妮思·怀特",
+      "partner": "派派·韦尔",
+      "raw_partner": "Piper Wheel",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/burnice-white-teams"
+    },
+    {
+      "core": "凯撒·金",
+      "partner": "伊芙琳·舒瓦利耶",
+      "raw_partner": "Evelyn Chevalier",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-teams"
+    },
+    {
+      "core": "凯撒·金",
+      "partner": "仪玄",
+      "raw_partner": "Yixuan",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-teams"
+    },
+    {
+      "core": "凯撒·金",
+      "partner": "星见雅",
+      "raw_partner": "Hoshimi Miyabi",
+      "url": "https://www.icy-veins.com/zenless-zone-zero/caesar-king-teams"
+    }
+  ]
+}
