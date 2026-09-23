@@ -6,8 +6,8 @@ FILE = Path("data/synergy.json")
 
 
 TAG_RULES = [
-    ("disorder", "紊乱"),
     ("polarity disorder", "极性紊乱"),
+    ("disorder", "紊乱"),
     ("anomaly buildup", "异常积蓄"),
     ("anomaly", "异常"),
     ("stun", "失衡"),
@@ -39,17 +39,6 @@ def detect_tags(text):
     return tags
 
 
-def build_reason(partner, tags):
-    if not tags:
-        return f"{partner}与核心角色存在攻略推荐协同。"
-
-    return (
-        f"{partner}的主要协同方向："
-        + "、".join(tags)
-        + "。"
-    )
-
-
 def main():
     data = json.loads(
         FILE.read_text(
@@ -57,29 +46,65 @@ def main():
         )
     )
 
+    tagged_count = 0
+
     for relation in data.get(
         "relations",
         []
     ):
-        source_reason = (
-            relation.get(
-                "source_reason"
+        evidence_type = relation.get(
+            "evidence_type"
+        )
+
+        if evidence_type == "explicit_reason":
+
+            source_reason = (
+                relation.get(
+                    "source_reason"
+                )
+                or ""
             )
-            or ""
-        )
 
-        tags = detect_tags(
-            source_reason
-        )
+            tags = detect_tags(
+                source_reason
+            )
 
-        relation["tags"] = tags
+            relation["tags"] = tags
 
-        relation["reason_zh"] = build_reason(
-            relation["partner"],
-            tags
-        )
+            if tags:
+                relation["reason_zh"] = (
+                    f"{relation['partner']}的主要协同方向："
+                    + "、".join(tags)
+                    + "。"
+                )
+            else:
+                relation["reason_zh"] = (
+                    f"{relation['partner']}与"
+                    f"{relation['core']}存在明确攻略协同。"
+                )
 
-    data["schema"] = 3
+            tagged_count += 1
+
+        else:
+            relation["tags"] = (
+                relation.get("tags")
+                or []
+            )
+
+            if not relation.get(
+                "reason_zh"
+            ):
+                relation["reason_zh"] = (
+                    f"Icy Veins 将"
+                    f"{relation['partner']}列为"
+                    f"{relation['core']}的推荐搭档。"
+                )
+
+    data["schema"] = 5
+
+    data[
+        "enriched_explicit_count"
+    ] = tagged_count
 
     FILE.write_text(
         json.dumps(
@@ -91,7 +116,8 @@ def main():
     )
 
     print(
-        "Synergy enrichment complete."
+        "Enriched explicit relations:",
+        tagged_count
     )
 
 
