@@ -58,6 +58,9 @@ jobs:
       - name: Extract all Icy Veins character synergy
         run: python scripts/extract_icyveins_all_synergy.py
 
+      - name: Summarize Icy Veins synergy issues
+        run: python scripts/summarize_icyveins_synergy_issues.py
+
       - name: Build normalized team database
         run: python scripts/build_teams.py
 
