@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 SOURCE_FILE = Path(
-    "data/sources/icyveins_synergy_miyabi.json"
+    "data/sources/icyveins_all_character_synergy.json"
 )
 
 OUTPUT_FILE = Path(
@@ -20,73 +20,123 @@ def main():
     )
 
     relations = []
+    seen = set()
 
     for item in source.get(
-        "synergies",
+        "relations",
         []
     ):
-        reason = item.get(
-            "source_reason"
+        core = item.get("core")
+        partner = item.get("partner")
+
+        if not core or not partner:
+            continue
+
+        if core == partner:
+            continue
+
+        key = (
+            core,
+            partner
         )
 
-        shared_reason = item.get(
-            "shared_reason"
-        )
+        if key in seen:
+            continue
 
-        effective_reason = (
-            reason
-            if reason
-            else shared_reason
-        )
+        seen.add(key)
 
-        relation = {
-            "core":
-                item["core"],
+        source_reason = (
+            item.get(
+                "source_reason"
+            )
+            or ""
+        ).strip()
 
-            "partner":
-                item["partner"],
+        if source_reason:
+            evidence_type = (
+                "explicit_reason"
+            )
 
-            "tags": [],
+            reason_zh = None
 
-            "reason_zh":
-                None,
+        else:
+            evidence_type = (
+                "recommended_pairing"
+            )
 
-            "source_reason":
-                effective_reason,
+            reason_zh = (
+                f"Icy Veins 将"
+                f"{partner}列为"
+                f"{core}的推荐搭档。"
+            )
 
-            "shared_group":
-                item.get(
-                    "shared_group"
-                ),
-
-            "source_count":
-                1,
-
-            "sources": [
-                {
-                    "site":
-                        "Icy Veins",
-
-                    "url":
-                        source["url"],
-
-                    "raw_partner":
-                        item.get(
-                            "raw_partner"
-                        ),
-
-                    "fetched_at":
-                        source["fetched_at"]
-                }
-            ]
-        }
+            source_reason = None
 
         relations.append(
-            relation
+            {
+                "core":
+                    core,
+
+                "partner":
+                    partner,
+
+                "tags":
+                    [],
+
+                "reason_zh":
+                    reason_zh,
+
+                "source_reason":
+                    source_reason,
+
+                "evidence_type":
+                    evidence_type,
+
+                "source_count":
+                    1,
+
+                "sources": [
+                    {
+                        "site":
+                            "Icy Veins",
+
+                        "url":
+                            item.get(
+                                "url"
+                            ),
+
+                        "raw_partner":
+                            item.get(
+                                "raw_partner"
+                            ),
+
+                        "fetched_at":
+                            source.get(
+                                "fetched_at"
+                            )
+                    }
+                ]
+            }
         )
 
+    explicit_count = sum(
+        1
+        for item in relations
+        if item[
+            "evidence_type"
+        ] == "explicit_reason"
+    )
+
+    listing_count = sum(
+        1
+        for item in relations
+        if item[
+            "evidence_type"
+        ] == "recommended_pairing"
+    )
+
     data = {
-        "schema": 2,
+        "schema": 4,
 
         "generated_at":
             datetime.now(
@@ -104,6 +154,12 @@ def main():
         "relation_count":
             len(relations),
 
+        "explicit_reason_count":
+            explicit_count,
+
+        "listing_only_count":
+            listing_count,
+
         "relations":
             relations
     }
@@ -118,9 +174,18 @@ def main():
     )
 
     print(
-        f"Generated "
-        f"{len(relations)} "
-        f"synergy relations."
+        "Relations:",
+        len(relations)
+    )
+
+    print(
+        "Explicit reasons:",
+        explicit_count
+    )
+
+    print(
+        "Listing only:",
+        listing_count
     )
 
 
