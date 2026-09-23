@@ -151,30 +151,37 @@ def extract_character_anchors(
     return anchors
 
 
-def make_team(group, indexes):
-    raw_members = [
-        group[i]["raw"]
-        for i in indexes
-    ]
-
-    members = [
-        group[i]["normalized"]
-        for i in indexes
-    ]
-
+def build_team(group):
     return {
-        "raw_members":
-            raw_members,
+        "raw_members": [
+            item["raw"]
+            for item in group
+        ],
 
-        "normalized_members":
-            members,
+        "normalized_members": [
+            item["normalized"]
+            for item in group
+        ],
 
-        "fully_normalized":
-            (
-                len(members) == 3
-                and all(members)
-            )
+        "fully_normalized": True
     }
+
+
+def has_slash_between(
+    section_html,
+    left,
+    right
+):
+    between = section_html[
+        left["end"]:
+        right["start"]
+    ]
+
+    text = clean_html(
+        between
+    )
+
+    return "/" in text
 
 
 def parse_page(
@@ -203,125 +210,157 @@ def parse_page(
         aliases
     )
 
-    core_indexes = [
-        index
-        for index, anchor
-        in enumerate(anchors)
-        if anchor["normalized"]
-        == normalized_core
-    ]
-
     teams = []
     warnings = []
 
-    for group_number, start_index in enumerate(
-        core_indexes
-    ):
-        if (
-            group_number + 1
-            < len(core_indexes)
-        ):
-            end_index = core_indexes[
-                group_number + 1
-            ]
-        else:
-            end_index = len(anchors)
+    i = 0
 
-        group = anchors[
-            start_index:end_index
+    while i < len(anchors):
+
+        remaining = len(anchors) - i
+
+        if remaining < 3:
+            break
+
+        # First check whether the next 4 names
+        # represent a 3-person team with
+        # one alternative slot.
+        if remaining >= 4:
+
+            group4 = anchors[
+                i:i + 4
+            ]
+
+            alt_pair = None
+
+            for j in range(3):
+
+                if has_slash_between(
+                    section_html,
+                    group4[j],
+                    group4[j + 1]
+                ):
+                    alt_pair = (
+                        j,
+                        j + 1
+                    )
+                    break
+
+            if alt_pair is not None:
+
+                left_alt, right_alt = (
+                    alt_pair
+                )
+
+                team_a = [
+                    item
+                    for index, item
+                    in enumerate(group4)
+                    if index != right_alt
+                ]
+
+                team_b = [
+                    item
+                    for index, item
+                    in enumerate(group4)
+                    if index != left_alt
+                ]
+
+                members_a = [
+                    item["normalized"]
+                    for item in team_a
+                ]
+
+                members_b = [
+                    item["normalized"]
+                    for item in team_b
+                ]
+
+                if (
+                    normalized_core
+                    in members_a
+                    and normalized_core
+                    in members_b
+                ):
+                    teams.append(
+                        build_team(
+                            team_a
+                        )
+                    )
+
+                    teams.append(
+                        build_team(
+                            team_b
+                        )
+                    )
+
+                    i += 4
+                    continue
+
+        # Normal team: three consecutive agents.
+        group3 = anchors[
+            i:i + 3
         ]
 
-        unique_group = []
-        seen = set()
+        members = [
+            item["normalized"]
+            for item in group3
+        ]
 
-        for anchor in group:
-            name = anchor[
-                "normalized"
-            ]
+        if normalized_core in members:
 
-            if name in seen:
-                continue
-
-            seen.add(name)
-            unique_group.append(
-                anchor
-            )
-
-        group = unique_group
-
-        if len(group) == 3:
             teams.append(
-                make_team(
-                    group,
-                    [0, 1, 2]
+                build_team(
+                    group3
                 )
             )
+
+            i += 3
             continue
 
-        if len(group) == 4:
-            between = section_html[
-                group[2]["end"]:
-                group[3]["start"]
-            ]
+        # Something unexpected appeared.
+        # Skip one anchor and try to recover.
+        warnings.append(
+            {
+                "type":
+                    "unmatched_sequence",
 
-            between_text = clean_html(
-                between
-            )
+                "raw_group":
+                    [
+                        item["raw"]
+                        for item in group3
+                    ],
 
-            if "/" in between_text:
-                teams.append(
-                    make_team(
-                        group,
-                        [0, 1, 2]
-                    )
-                )
+                "normalized_group":
+                    members
+            }
+        )
 
-                teams.append(
-                    make_team(
-                        group,
-                        [0, 1, 3]
-                    )
-                )
-
-                continue
-
-        if group:
-            warnings.append(
-                {
-                    "type":
-                        "unexpected_group",
-
-                    "raw_group":
-                        [
-                            item["raw"]
-                            for item in group
-                        ],
-
-                    "normalized_group":
-                        [
-                            item["normalized"]
-                            for item in group
-                        ]
-                }
-            )
+        i += 1
 
     deduped = []
     seen_keys = set()
 
     for team in teams:
+
+        members = team[
+            "normalized_members"
+        ]
+
         key = tuple(
-            sorted(
-                team[
-                    "normalized_members"
-                ]
-            )
+            sorted(members)
         )
 
         if key in seen_keys:
             continue
 
-        seen_keys.add(key)
-        deduped.append(team)
+        seen_keys.add(
+            key
+        )
+
+        deduped.append(
+            team
+        )
 
     return deduped, warnings
 
@@ -340,9 +379,7 @@ def main():
     )["aliases"]
 
     page_results = []
-
     all_teams = []
-
     failed_pages = []
 
     warning_count = 0
@@ -417,6 +454,7 @@ def main():
             )
 
             for team in teams:
+
                 all_teams.append(
                     {
                         "core":
@@ -433,6 +471,7 @@ def main():
                 )
 
         except Exception as exc:
+
             failed_pages.append(
                 {
                     "core":
@@ -451,7 +490,7 @@ def main():
         )
 
     data = {
-        "schema": 1,
+        "schema": 2,
 
         "source":
             "icyveins",
