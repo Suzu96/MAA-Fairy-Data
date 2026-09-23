@@ -1,12 +1,15 @@
 {
   "schema": 1,
-  "database_version": 2,
-  "updated_at": "2026-09-22",
+  "database_version": 3,
+  "updated_at": "2026-09-23T03:36:08Z",
   "game_version": "3.x",
   "files": {
     "teams": "data/teams.json",
     "synergy": "data/synergy.json",
     "characters": "data/characters.json",
     "sources": "data/sources.json"
-  }
+  },
+  "content_hash": "5e203dc8da4777262d433c81ed881885c8e492bba65330eefb7756785c6f9b92",
+  "team_count": 490,
+  "synergy_relation_count": 501
 }
