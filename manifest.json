@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "database_version": 3,
-  "updated_at": "2026-09-23T03:36:08Z",
+  "database_version": 4,
+  "updated_at": "2026-10-13T23:09:46Z",
   "game_version": "3.x",
   "files": {
     "teams": "data/teams.json",
@@ -9,7 +9,7 @@
     "characters": "data/characters.json",
     "sources": "data/sources.json"
   },
-  "content_hash": "5e203dc8da4777262d433c81ed881885c8e492bba65330eefb7756785c6f9b92",
+  "content_hash": "deb7ba7eec7cf5b35efe2906459e814483e01f40141b5f809e821661215c3353",
   "team_count": 490,
   "synergy_relation_count": 501
 }

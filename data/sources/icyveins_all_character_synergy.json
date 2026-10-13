@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "icyveins",
-  "fetched_at": "2026-10-13T01:00:49Z",
+  "fetched_at": "2026-10-13T23:09:45Z",
   "page_count": 62,
   "relation_count": 501,
   "failed_page_count": 0,
@@ -2244,7 +2244,7 @@
       "core": "菲欧妮",
       "partner": "「扳机」",
       "raw_partner": "Trigger",
-      "source_reason": "Stun Agents Stun Agents will almost always be worse than Anomaly Agents for Phoenix, since she needs an Anomaly Agent to activate her Additional Ability. However, if you are lacking in Anomaly Agent options, these Stun Agents will be serviceable. Notably, Nangong Yu is the best of the three by a mile, as her kit is built to support Anomaly teams. It should be noted that in these teams, you should not use Remielle Dan , since Remielle will not get the most out of her buffing without a third Anomaly Agent. Instead, use one of the recommended Support Agents.",
+      "source_reason": "Stun Agents Stun agents will work well in Phoenix teams however with the exception of Nangong Yu they will not benefit from Phoenix's Anomaly CRIT's very much which devalues them a lot. It should be noted that in these teams, you should not use Remielle Dan , since Remielle will not get the most out of her buffing without a third Anomaly Agent. Instead, use one of the recommended Support Agents.",
       "url": "https://www.icy-veins.com/zenless-zone-zero/phoenix-teams",
       "http_status": 200
     },
